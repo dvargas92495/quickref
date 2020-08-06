@@ -1,0 +1,48 @@
+[
+  {
+    "topic": "cat 1",
+    "items": [
+      { "s": "CTRL+/", "h": "Roam HelpRoam HelpRoam HelpRoam HelpRoam HelpRoam HelpRoam Help" },
+      { "s": "CTRL+H", "h": "special help" }
+    ]
+  },
+  {
+    "topic": "cat 2",
+    "items": [
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{[[todo]]}}", "h": "todo" }
+    ]
+  },
+  {
+    "topic": "cat 3",
+    "items": [
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{[[todo]]}}", "h": "todo" }
+    ]
+  },
+  {
+    "topic": "cat 4",
+    "items": [
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{query}}", "h": "query data" },
+      { "s": "{{[[todo]]}}", "h": "todo" }
+    ]
+  }
+]
