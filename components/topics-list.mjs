@@ -1,18 +1,15 @@
 
 let template = `
 <div>
-    <div class="" :style="styleTopics">
-        {{topic.topic}}
+    <div class="rqrTopicsList">
+      <div class="rqrTopicListItem" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
+            {{topic.topic}}
+      </div>
     </div>
 </div>
 `
 
-let styleTopics = ()=> {
-  return {
-    height: '35px',
-    border: '1px solid yellow'
-  }
-}
+let originalHoverColor=''
 
 export default {
 name: 'rqr-topics-list',
@@ -20,8 +17,17 @@ props:  ['topic' ] ,
 components: {
   
 },
-  computed: {
-    styleTopics
-  },
+computed: {
+  
+},
+methods: {
+  mouseover: function(e){
+    originalHoverColor = e.target.style.backgroundColor
+    e.target.style.backgroundColor = '#f2f2f2'
+  },    
+  mouseleave: function(e){
+    e.target.style.backgroundColor = originalHoverColor
+  }
+},
 template: template 
 }

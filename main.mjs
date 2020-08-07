@@ -2,6 +2,26 @@ import Vue      from 'https://cdn.jsdelivr.net/npm/vue/dist/vue.esm.browser.js'
 import rqrPopup from './components/popup.mjs'
 import data     from './components/data.mjs'
 
+// Function to dynamically add a new CSS File to the current site 
+function addCSSToPage(tagId, cssToAdd) {
+  //Delete any existing reference added earlier to this script
+  var old = document.getElementById(tagId) 
+  if(old){ old.remove()}
+
+  var cssLink = document.createElement('link')
+    cssLink.type  = 'text/css' 
+    cssLink.rel   = 'stylesheet';  
+    cssLink.href  = cssToAdd
+    cssLink.id    = tagId
+    cssLink.async = false
+    document.getElementsByTagName('head')[0].appendChild(cssLink)
+}
+if(window.hostingSite === undefined ) {
+  //used for testing
+  addCSSToPage('rqrCSS', '/rqr.css') 
+} else {
+  addCSSToPage('rqrCSS', window.hostingSite + 'rqr.css') 
+}
 
 const keyboardProcessorRQF = ()=> {
   let c = document.querySelector('#rqrcontrol')
@@ -18,7 +38,6 @@ document.addEventListener("keydown", (e)=> {
     keyboardProcessorRQF()
   }
 })
-
 
 let divRoot = document.createElement("div")
 divRoot.id = 'rqrPopup' 
@@ -38,7 +57,7 @@ let vm = new Vue({
   components: {
     rqrPopup
   },
-  mounted : function () {
+  mounted : function() {
     this.references = data
   }
 })

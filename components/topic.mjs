@@ -1,5 +1,3 @@
-import themes    from './themes.mjs'
-
 let template = `
   <div class="styleTopicWrapper" style="margin:10px;">
     <div class="rqrtopic" style="padding-bottom:8px;height:30px; font-weight: bold; font-size:14pt">
@@ -19,8 +17,6 @@ let template = `
   </div>
 
 `
-
-let theme = new themes
 
 export default {
   name: 'rqr-topic',
