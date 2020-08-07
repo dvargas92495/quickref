@@ -4,7 +4,7 @@ import themes         from './themes.mjs'
 
 let template = `
 <div id="rqrcontrol" :style="styleControl">
-  <div style="height:50px;width:100%;padding:10px; border-bottom:1px solid green;display:flex">
+  <div style="height:28px;padding:10px; border-bottom:1px solid darkgrey;display:flex">
     <div style="width:170px;margin-top:2px;font-size:16pt;font-style:bold">
       Quick reference
     </div>
