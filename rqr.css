@@ -1,6 +1,7 @@
 
 .rqrcontrol {
     font-family:        roboto,arial,sans-serif;
+    font-size:          13px;
     position:           absolute;
     left:               50%;
     top:                50%;
@@ -47,6 +48,7 @@
 
 .rqrControlHeaderCloseButton {
     width:      50px;
+    height:     15px;
     text-align: right;
     font-size:  10pt;
     color:  grey;
@@ -54,7 +56,7 @@
 
 .rqrContentAreaSideBar {
     border-right:   1px solid lightgrey; 
-    width:150px;
+    width:          150px;
 }
 
 .rqrContentAreaTopics {
@@ -63,11 +65,35 @@
     width:              100%
 }
 
-
-.rqrTopicListItem {
-    padding-top:        10px;
-    padding-left:       5px;
-    font-size:          10pt; 
-    height:             25px
+.rqrTopicList {
+    padding-top:        5px;
 }
 
+.rqrTopicListItem {
+    padding-top:        8px;
+    padding-left:       3px;
+    font-size:          12px; 
+    height:             20px;
+}
+
+.rqrTopic  {
+    margin: 10px;
+}
+
+.rqrTopicHeader {
+    padding-top:    8px;
+    height:         25px; 
+    font-weight:    bold; 
+}
+
+.rqrTopicTable {
+    width:              100%;
+    border-collapse:    collapse;
+}
+
+.rqrTopicTableHeader {
+    text-align:         left;
+    font-style:        italic;
+    font-size:          12px;
+    color:              lightgrey;
+}

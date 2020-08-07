@@ -1,25 +1,8 @@
-
-let template = `
-<div>
-    <div class="rqrTopicsList">
-      <div class="rqrTopicListItem" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
-            {{topic.topic}}
-      </div>
-    </div>
-</div>
-`
-
 let originalHoverColor=''
 
 export default {
 name: 'rqr-topics-list',
 props:  ['topic' ] ,
-components: {
-  
-},
-computed: {
-  
-},
 methods: {
   mouseover: function(e){
     originalHoverColor = e.target.style.backgroundColor
@@ -29,5 +12,14 @@ methods: {
     e.target.style.backgroundColor = originalHoverColor
   }
 },
-template: template 
+template: `
+<div>
+    <div class="rqrTopicList">
+      <div class="rqrTopicListItem" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
+            {{topic.topic}}
+      </div>
+    </div>
+</div>
+
+` 
 }

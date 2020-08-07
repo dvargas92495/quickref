@@ -16,6 +16,7 @@ function addCSSToPage(tagId, cssToAdd) {
     cssLink.async = false
     document.getElementsByTagName('head')[0].appendChild(cssLink)
 }
+
 if(window.hostingSite === undefined ) {
   //used for testing
   addCSSToPage('rqrCSS', '/rqr.css') 
@@ -23,8 +24,8 @@ if(window.hostingSite === undefined ) {
   addCSSToPage('rqrCSS', window.hostingSite + 'rqr.css') 
 }
 
-const keyboardProcessorRQF = ()=> {
-  let c = document.querySelector('#rqrcontrol')
+window.keyboardProcessorRQF = ()=> {
+  let c = document.querySelector('.rqrcontrol')
   if(c.style.visibility == 'hidden') {
     c.style.visibility = 'visible'
   } else {
@@ -32,14 +33,14 @@ const keyboardProcessorRQF = ()=> {
   }
 }
 
-document.addEventListener("keydown", (e)=> {
-  if(   e.ctrlKey==true  &&  e.key=='H'  ) {
+document.addEventListener('keydown', (e)=> {
+  if( e.ctrlKey==true  &&  e.key=='H' ) {
     e.preventDefault();
     keyboardProcessorRQF()
   }
 })
 
-let divRoot = document.createElement("div")
+let divRoot = document.createElement('div')
 divRoot.id = 'rqrPopup' 
 divRoot.visibility = 'hidden'  
 divRoot.height = 0
@@ -53,7 +54,7 @@ let vm = new Vue({
       references: []
     }
   },
-  template: '<div><rqr-popup :references="references"></rqr-popup></div>',
+  template: '<div><rqr-popup :references="references" ></rqr-popup></div>',
   components: {
     rqrPopup
   },
