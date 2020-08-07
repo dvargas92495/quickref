@@ -1,10 +1,10 @@
 import Vue      from 'https://cdn.jsdelivr.net/npm/vue/dist/vue.esm.browser.js'
 import rqrPopup from './components/popup.mjs'
+import data     from './components/data.mjs'
+
 
 const keyboardProcessorRQF = ()=> {
-  console.log('keyboardProcessorRQF')
   let c = document.querySelector('#rqrcontrol')
-  console.log(c)
   if(c.style.visibility == 'hidden') {
     c.style.visibility = 'visible'
   } else {
@@ -39,14 +39,6 @@ let vm = new Vue({
     rqrPopup
   },
   mounted : function () {
-    fetch('./data.json')
-      .then(response => {
-        response.json().then(results =>  {
-        this.references = results
-        });
-    })
-    .catch(function(err) {
-      console.log('Fetch Error :-S', err);
-    });
+    this.references = data
   }
 })
