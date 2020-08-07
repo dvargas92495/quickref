@@ -3,7 +3,8 @@ export default {
   props:  ['topic' ] ,
   template: `
   <div class="rqrTopic" style="margin:10px;">
-    <div class="rqrTopicHeader">
+
+    <div class="rqrTopicHeader" v-bind:id="'rqrTopicHeader-'+topic.topic">
         {{topic.topic}}
     </div>
 
@@ -17,6 +18,7 @@ export default {
          <td></td><td>{{topic.header.c2}}</td><td>{{topic.header.c3}}</td>
       </tr>
     </table>
+
   </div>
 
 ` 
