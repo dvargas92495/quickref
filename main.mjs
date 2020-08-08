@@ -9,12 +9,12 @@ function addCSSToPage(tagId, cssToAdd) {
   if(old){ old.remove()}
 
   var cssLink = document.createElement('link')
-    cssLink.type  = 'text/css' 
-    cssLink.rel   = 'stylesheet';  
-    cssLink.href  = cssToAdd
-    cssLink.id    = tagId
-    cssLink.async = false
-    document.getElementsByTagName('head')[0].appendChild(cssLink)
+      cssLink.type  = 'text/css' 
+      cssLink.rel   = 'stylesheet';  
+      cssLink.href  = cssToAdd
+      cssLink.id    = tagId
+      cssLink.async = false
+  document.getElementsByTagName('head')[0].appendChild(cssLink)
 }
 
 if(window.hostingSite === undefined ) {
@@ -43,10 +43,10 @@ document.addEventListener('keydown', (e)=> {
 })
 
 let divRoot = document.createElement('div')
-divRoot.id = 'rqrPopup' 
-divRoot.visibility = 'hidden'  
-divRoot.height = 0
-divRoot.width = 0
+    divRoot.id = 'rqrPopup' 
+    divRoot.visibility = 'hidden'  
+    divRoot.height = 0
+    divRoot.width = 0
 document.body.appendChild(divRoot)
 
 let vm = new Vue({
