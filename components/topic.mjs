@@ -9,14 +9,25 @@ export default {
     </div>
 
     <table class="rqrTopicTable">
-      <tr  v-for="item in topic.items" style="border-bottom: 1px dashed lightgrey; width:100%;table-layout: fixed;overflow-wrap: break-word;">
-        <td style="width:50%">{{item.c1}}</td>
-        <td style="width:25%">{{item.c2}}</td>
-        <td style="width:25%">{{item.c3}}</td>
-      </tr>
-      <tr class="rqrTopicTableHeader">
-         <td></td><td>{{topic.header.c2}}</td><td>{{topic.header.c3}}</td>
-      </tr>
+
+      <template v-if="topic.type =='keyboard'">
+        <tr v-for="item in topic.items" class="rqrTableRow"> 
+          <td style="width:40%">{{item.c1}}</td>
+          <td style="width:30%">{{item.c2}}</td>
+          <td style="width:30%">{{item.c3}}</td>
+        </tr>
+        <tr class="rqrTopicTableHeader">
+          <td></td><td>{{topic.header.c2}}</td><td>{{topic.header.c3}}</td>
+        </tr>
+      </template>
+
+      <template v-if="topic.type != 'keyboard'">
+        <tr v-for="item in topic.items" class="rqrTableRow"> 
+          <td style="width:25%">{{item.c1}}</td>
+          <td style="width:70%">{{item.c2}}</td>
+        </tr>
+      </template>
+
     </table>
 
   </div>

@@ -1,21 +1,23 @@
 const data = [
   {
-    "topic": "Navigation",
-    "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
-    "items": [
+      "type": "keyboard",  
+     "topic": "Working with lists",
+    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
+     "items": [
       { "c1": "Search bar",             "c2": "Ctrl-u",     "c3": "⌘-u"          },
       { "c1": "Return to page",         "c2": "Ctrl-Enter", "c3": "⌘-Enter"      },
       { "c1": "Daily Notes Page",       "c2": "Alt-d",      "c3": "Ctrl-Shift-d"  },
-      { "c1": "Open link under cursor", "c2": "Ctrl-o",     "c3": "Ctrl-o"        },
+      { "c1": "Follow link under cursor", "c2": "Ctrl-o",     "c3": "Ctrl-o"        },
       { "c1": "Move to start of block", "c2": "Ctrl-Home",  "c3": "Ctrl-a"       },
       { "c1": "Move to end of block",   "c2": "Ctrl-End",   "c3": "Ctrl-e"        }
     ]
   },
   {
+    "type": "keyboard",  
     "topic": "Blocks",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
-      { "c1": "new block",                          "c2": "Enter",          "c3": "Enter"          },
+      { "c1": "New block",                          "c2": "Enter",          "c3": "Enter"          },
       { "c1": "Indent block",                       "c2": "Tab",            "c3": "Tab"      },
       { "c1": "Unindent block",                     "c2": "Shift-Tab",      "c3": "Shift-Tab"  },
       { "c1": "Move block up",                      "c2": "Alt-Shift-Up↑",   "c3": "⌘-Shift-Up↑"  },
@@ -35,6 +37,7 @@ const data = [
     ]
   },
   {
+    "type": "keyboard",  
     "topic": "Sidebar",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
@@ -44,6 +47,7 @@ const data = [
     ]
   },
   {
+    "type": "keyboard",  
     "topic": "Search",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
@@ -53,6 +57,7 @@ const data = [
     ]
   },
   {
+    "type": "keyboard",  
     "topic": "Visuals",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
@@ -63,6 +68,7 @@ const data = [
     ]
   },
   {
+    "type": "keyboard",  
     "topic": "Formatting",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
@@ -79,6 +85,7 @@ const data = [
     ]
   },
   {
+    "type": "keyboard",  
     "topic": "Version Control",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
@@ -89,6 +96,7 @@ const data = [
     ]
   },
   {
+    "type": "keyboard",  
     "topic": "Other shortcuts",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
@@ -97,6 +105,23 @@ const data = [
       { "c1": "Redo",                      "c2": "Ctrl-y", "c3": "⌘-Shift-z" },
       { "c1": "Move character for./back.", "c2": "",       "c3": "Ctrl-f / Ctrl-b" },
       { "c1": "Swap characters",           "c2": "", "     c3": "Ctrl-t" }
+    ]
+  },
+  {
+    "type": "feature",  
+    "topic": "Queries",
+    "header" : {"c1": "", "c2": "", "c3": "" },
+    "items": [
+      { "c1": "{{query}}",  "c2": "{{query: what you're looking for }}"},
+      { "c1": "and",        "c2": "{{query: {and: [[tagA]] [[tagB]]} }"},
+      { "c1": "or",         "c2": "{{query: {or: [[tagA]] [[tagB]]} }"},
+      { "c1": "not",        "c2": "{{query: {not: [[tagA]] [[tagB]]} }"},
+      { "c1": "between",    "c2": "{{query: {between: [[January 1st, 2020]] [[today]]} }"},
+      { "c1": "and not",    "c2": "{{query: {and:[[Singapore]] {not:[[London]]} } }}"},
+      { "c1": "and between","c2": "{{query: {and: [[TODO]] {between: [[January 1st, 2020]] [[Today]]} } }}"},
+      { "c1": "self-reference",   "c2": "After:  {{[[query]]: {and:[[Singapore]] [[London]] {not:[[query]]} } }}"},
+      { "c1": "pages",   "c2": "use page name in the query instead of a tag"},
+      { "c1": "",   "c2": ""}
     ]
   }
   // ,
