@@ -110,7 +110,6 @@ const data = [
   {
     "type": "feature",  
     "topic": "Queries",
-    "header" : {"c1": "", "c2": "", "c3": "" },
     "items": [
       { "c1": "{{query}}",  "c2": "{{query: what you're looking for }}"},
       { "c1": "and",        "c2": "{{query: {and: [[tagA]] [[tagB]]} }"},
@@ -123,12 +122,97 @@ const data = [
       { "c1": "pages",   "c2": "use page name in the query instead of a tag"},
       { "c1": "",   "c2": ""}
     ]
+  },
+  {
+      "type": "feature",  
+     "topic": "functions",
+     "items": [
+      { "c1": "{{alias: }}", "c2": "{{alias: ((block)) text to display}}"},
+      { "c1": "{{attr-table: }}", "c2": "{{attr-table: [[size]]" },
+      { "c1": "{{calc: }}", "c2": "{{calc: 4+5 }} or {{calc: ((block)) + ((block))}}" },
+      { "c1": "{{character-count}}", "c2": "" },
+      { "c1": "{{word-count}}", "c2": "" },
+      { "c1": "{{chart: }}", "c2": "" },
+      { "c1": "{{date}}", "c2": "" },
+      { "c1": "{{diagram}}", "c2": "Add blocks by nesting them under the main {{diagram}} block.  Hold down Option⌥ and drag between two blocks to create a connecting line. Not sure how to remove these lines. Hold down Option⌥ to drag a box to create a group. Delete a group by clicking on it and hitting backspace while your mouse button is down." },
+      { "c1": "{{TODO}}", "c2": "{{TODO}} or {{DONE}}" },
+      { "c1": "{{encrypt}}", "c2": "Encrypts a block of text with a passphrase that you specify." },
+      { "c1": "{{iframe: }}", "c2": "Allows you to embed a website into your Roam page. You can navigate that website just as normal." },
+      { "c1": "{{kanban}}", "c2": "Add columns and cards by nesting bullets below the Kanban board. First level nested bullets are columns. Second level nested bullets are cards. Moving cards will move the blocks below." },
+      { "c1": "{{mentions: }}", "c2": "Pulls in the “Linked References” and “Unlinked References” sections for a specified page." },
+      { "c1": "{{or: }}", "c2": "Create simple dropdown {{or: Apples | Bananas | Carros  }}" },
+      { "c1": "{{orphans}}", "c2": "Provide a list of “orphaned” blocks that can’t be found on any page, because their parent block was deleted." },
+      { "c1": "{{pdf: }}", "c2": "{{pdf: https://sitepath/file.pdf }} upload a pdf with /up command" },
+      { "c1": "{{POMO}}", "c2": "This creates a Pomodoro timer that you can click on to start at 25 min countdown timer with a 5 min break." },
+      { "c1": "{{slider}}", "c2": "Creates a slider that you can slide from 1 to 10. For pages with multiple authors, you can see where people have slid their slider to." },
+      { "c1": "{{table}}", "c2": "Creates a table in Roam. Add column headings then rows using nested bullets below the {{table}} function." },
+      { "c1": "{{TaoOfRoam}}", "c2": "Shows a spinning astrolabe, a favourite icon of Roam Research" },
+      { "c1": "{{youtube: }}", "c2": "{{youtube: https://youtu.be/ojwIIzRC8oU}}" }
+    ]
+  },
+  {
+      "type": "feature",  
+     "topic": "Embeds",
+     "items": [
+      { "c1": "{{embed: }}",          "c2": "Embeds a block from elsewhere, including all of its children, or a page from elsewhere, without Linked and Unlinked References."},
+      { "c1": "{{embed: ((block))}}", "c2": "Block embed"},
+      { "c1": "{{embed: [[page]]}}",  "c2": "Page embed"}
+    ]
+  },
+  {
+      "type": "feature",  
+     "topic": "/helpers",
+     "items": [
+      { "c1": "/TODO", "c2": "A shortcut for the {{TODO}} function but also makes the TODO a [[page reference]]: {{[[TODO]]}}. This is a function that displays as a checkbox which can be checked by clicking on it. When it is checked, it becomes {{DONE}}."},
+      { "c1": "/Current Time", "c2": "Current time, does not update"},
+      { "c1": "/POMO", "c2": "Pomodoro timer"},
+      { "c1": "/Date Picker", "c2": "Insert a date with a calendar"},
+      { "c1": "/Today", "c2": "Today's date"},
+      { "c1": "/Tomorrow", "c2": "Tomorrows Date"},
+      { "c1": "/Yesterday", "c2": "Yesterdays date"},
+      { "c1": "/Bold", "c2": ""},
+      { "c1": "/Italics", "c2": ""},
+      { "c1": "/Highlight", "c2": ""},
+      { "c1": "/Strikethrough", "c2": ""},
+      { "c1": "/Code Inline", "c2": "A shortcut for “ which makes the text in between the backticks format as monospaced text in the middle of a normal sentence,"},
+      { "c1": "/Code Block", "c2": "Insert program snippets of code"},
+      { "c1": "/Latex", "c2": "Example: $$x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$$"},
+      { "c1": "/Calc", "c2": "Inline calculator"},
+      { "c1": "/Upload", "c2": "upload image or file"},
+      { "c1": "/Slider", "c2": "function that displays as a graphical slider from 1-10 with a number selected. Perhaps useful for visually rating things."},
+      { "c1": "/Encrypt", "c2": "Encrypts text"},
+      { "c1": "/Diagaram", "c2": "Insert diagram"},
+      { "c1": "/Table", "c2": "Insert a table"},
+      { "c1": "/Kanban", "c2": "Insert a kanban board"},
+      { "c1": "/YouTube", "c2": "YouTube video"},
+      { "c1": "/Mentions", "c2": "Insert Mentios"},
+      { "c1": "/Word Count", "c2": "Insert word count for page"},
+      { "c1": "/Query", "c2": "See query secition"}
+    ]
+  },
+    {
+      "type": "feature",  
+     "topic": "#roamcult",
+     "items": [
+      { "c1": "roamhacks.com", "c2": "Great summary of roam featurs. Also major source of help for this quick reference"},
+      { "c1": "", "c2": ""},
+      { "c1": "", "c2": ""},
+      { "c1": "", "c2": ""},
+      { "c1": "", "c2": ""},
+      { "c1": "", "c2": ""},
+      { "c1": "", "c2": ""},
+      { "c1": "", "c2": ""}
+    ]
   }
+
+
+
   // ,
   // {
-  //   "topic": "",
-  //   "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
-  //   "items": [
+  //     "type": "keyboard",  
+  //    "topic": "",
+  //   "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
+  //    "items": [
   //     { "c1": "", "c2": "", "c3": ""},
   //     { "c1": "", "c2": "", "c3": "" },
   //     { "c1": "", "c2": "", "c3": "" },
@@ -139,6 +223,23 @@ const data = [
   //     { "c1": "", "c2": "", "c3": "" }
   //   ]
   // }
+
+  // ,
+  // {
+  //     "type": "feature",  
+  //    "topic": "",
+  //    "items": [
+  //     { "c1": "", "c2": ""},
+  //     { "c1": "", "c2": ""},
+  //     { "c1": "", "c2": ""},
+  //     { "c1": "", "c2": ""},
+  //     { "c1": "", "c2": ""},
+  //     { "c1": "", "c2": ""},
+  //     { "c1": "", "c2": ""},
+  //     { "c1": "", "c2": ""}
+  //   ]
+  // }
+
 
 ]
 
