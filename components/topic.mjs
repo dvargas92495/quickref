@@ -12,19 +12,25 @@ export default {
 
       <template v-if="topic.type =='keyboard'">
         <tr v-for="item in topic.items" class="rqrTableRow"> 
-          <td style="width:40%">{{item.c1}}</td>
-          <td style="width:30%">{{item.c2}}</td>
-          <td style="width:30%">{{item.c3}}</td>
+          <td style="width:40%"><span v-html="item.c1"></span></td>
+          <td style="width:30%"><span v-html="item.c2"></span></td>
+          <td style="width:30%"><span v-html="item.c3"></span></td>
         </tr>
         <tr class="rqrTopicTableHeader">
           <td></td><td>{{topic.header.c2}}</td><td>{{topic.header.c3}}</td>
         </tr>
       </template>
 
-      <template v-if="topic.type != 'keyboard'">
+      <template v-if="topic.type == 'feature'">
         <tr v-for="item in topic.items" class="rqrTableRow"> 
-          <td style="width:25%">{{item.c1}}</td>
-          <td style="width:70%">{{item.c2}}</td>
+          <td style="width:25%"><span v-html="item.c1"></span></td>
+          <td style="width:70%"><span v-html="item.c2"></span></td>
+        </tr>
+      </template>
+
+      <template v-if="topic.type == 'example'">
+        <tr v-for="item in topic.items" class="rqrTableRow"> 
+          <td style="width:100%"><span v-html="item.c1"></span></td>
         </tr>
       </template>
 

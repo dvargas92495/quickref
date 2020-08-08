@@ -57,7 +57,10 @@ export default {
       <div class="rqrControlHeaderLabel">
         Quick reference
       </div>
-      <input v-model="query" v-on:input="queryChange" class="rqrControlHeaderInput"  type="text">
+      <input id="rqrControlHeaderInput" class="rqrControlHeaderInput" placeholder="Search..."  type="text"
+             v-model="query" 
+             v-on:input="queryChange" 
+             v-on:keyup.escape="hideQuickRef">
       <div class="rqrControlHeaderCloseButton" v-on:click="hideQuickRef">
         x
       </div>

@@ -1,4 +1,4 @@
-import Vue      from 'https://cdn.jsdelivr.net/npm/vue/dist/vue.esm.browser.js'
+import Vue      from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
 import rqrPopup from './components/popup.mjs'
 import data     from './components/data.mjs'
 
@@ -26,8 +26,10 @@ if(window.hostingSite === undefined ) {
 
 window.keyboardProcessorRQF = ()=> {
   let c = document.querySelector('.rqrcontrol')
-  if(c.style.visibility == 'hidden') {
+  if(c.style.visibility == 'hidden' || c.style.visibility == '') {
     c.style.visibility = 'visible'
+    document.getElementById('rqrControlHeaderInput').focus();
+    document.getElementById('rqrControlHeaderInput').select();
   } else {
     c.style.visibility = 'hidden'
   }

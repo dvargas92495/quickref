@@ -5,6 +5,8 @@ const data = [
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
       { "c1": "Search bar",             "c2": "Ctrl-u",     "c3": "⌘-u"          },
+      { "c1": "Move up / down in search bar", "c2": "Ctrl-j Ctrl-k ",     "c3": "⌘-j ⌘-k"          },
+      { "c1": "Search page",             "c2": "Ctrl-f",     "c3": "⌘-f"          },
       { "c1": "Return to page",         "c2": "Ctrl-Enter", "c3": "⌘-Enter"      },
       { "c1": "Daily Notes Page",       "c2": "Alt-d",      "c3": "Ctrl-Shift-d"  },
       { "c1": "Follow link under cursor", "c2": "Ctrl-o",     "c3": "Ctrl-o"        },
@@ -26,6 +28,7 @@ const data = [
       { "c1": "Zoom in to block",                   "c2": "Alt-Right",      "c3": "⌘-. ⌘-Shift-. (Safari / Firefox)"  },
       { "c1": "Zoom out of block",                  "c2": "Alt-Left",       "c3": "⌘-, ⌘-Shift-, (Safari / Firefox)"  },
       { "c1": "Expand subordinate blocks",          "c2": "Ctrl-Down",      "c3": "⌘-Down"  },
+      { "c1": "Collapse",                           "c2": "Ctrl-Up",      "c3": "⌘-Up"  },
       { "c1": "Select text in current block",       "c2": "Ctrl-a",         "c3": "⌘-a"  },
       { "c1": "Select current block",               "c2": "Shift-Up↑-Up↑ or Shift-Down-Down",      "c3": "Shift-Up↑-Up↑ or Shift-Down↓-Down"  },
       { "c1": "Select current block + block above", "c2": "Shift-Up↑-Up↑-Up↑", "c3": "Shift-Up↑-Up↑-Up↑"  },
@@ -51,9 +54,9 @@ const data = [
     "topic": "Search",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
-      { "c1": "Search all pages",             "c2": "Ctrl-u",     "c3": "⌘-u"          },
-      { "c1": "Navigate down/up in search dropdown",         "c2": "Ctrl-j / Ctrl-k", "c3": "Ctrl-j / Ctrl-k"      },
-      { "c1": "Search in current page",       "c2": "Ctrl-f",      "c3": "⌘-f"  }
+      { "c1": "Search all pages",                    "c2": "Ctrl-u",          "c3": "⌘-u" },
+      { "c1": "Navigate down/up in search dropdown", "c2": "Ctrl-j / Ctrl-k", "c3": "Ctrl-j / Ctrl-k" },
+      { "c1": "Search in current page",               "c2": "Ctrl-f",         "c3": "⌘-f" }
     ]
   },
   {
@@ -61,10 +64,10 @@ const data = [
     "topic": "Visuals",
     "header" : {"c1": "Action", "c2": "Windows", "c3": "Mac" },
     "items": [
-      { "c1": "Toggle [[brackets]]",             "c2": "Ctrl-c Ctrl-b",     "c3": "Ctrl-c Ctrl-b"          },
-      { "c1": "Toggle author avatar",         "c2": "Ctrl-c Ctrl-x", "c3": "Ctrl-c Ctrl-x"      },
-      { "c1": "Cycle namespace display",       "c2": "Ctrl-c Ctrl-l",      "c3": "Ctrl-c Ctrl-l"  },
-      { "c1": "Toggle block preview tooltip",       "c2": "Ctrl-c Ctrl-p",      "c3": "Ctrl-c Ctrl-p"  }
+      { "c1": "Toggle [[brackets]]",           "c2": "Ctrl-c Ctrl-b",  "c3": "Ctrl-c Ctrl-b" },
+      { "c1": "Toggle author avatar",          "c2": "Ctrl-c Ctrl-s",  "c3": "Ctrl-c Ctrl-s" },
+      { "c1": "Toggle block preview tooltip",  "c2": "Ctrl-c Ctrl-p",  "c3": "Ctrl-c Ctrl-p" },
+      { "c1": "Cycle namespace display",       "c2": "Ctrl-c Ctrl-l",  "c3": "Ctrl-c Ctrl-l" }
     ]
   },
   {
@@ -108,25 +111,24 @@ const data = [
     ]
   },
   {
-    "type": "feature",  
-    "topic": "Queries",
-    "items": [
-      { "c1": "{{query}}",  "c2": "{{query: what you're looking for }}"},
-      { "c1": "and",        "c2": "{{query: {and: [[tagA]] [[tagB]]} }"},
-      { "c1": "or",         "c2": "{{query: {or: [[tagA]] [[tagB]]} }"},
-      { "c1": "not",        "c2": "{{query: {not: [[tagA]] [[tagB]]} }"},
-      { "c1": "between",    "c2": "{{query: {between: [[January 1st, 2020]] [[today]]} }"},
-      { "c1": "and not",    "c2": "{{query: {and:[[Singapore]] {not:[[London]]} } }}"},
-      { "c1": "and between","c2": "{{query: {and: [[TODO]] {between: [[January 1st, 2020]] [[Today]]} } }}"},
-      { "c1": "self-reference",   "c2": "After:  {{[[query]]: {and:[[Singapore]] [[London]] {not:[[query]]} } }}"},
-      { "c1": "pages",   "c2": "use page name in the query instead of a tag"},
-      { "c1": "",   "c2": ""}
-    ]
-  },
-  {
       "type": "feature",  
-     "topic": "functions",
-     "items": [
+    "topic": "Markdown",
+    "items": [
+      { "c1": "**Bold**",     "c2": ""    },
+      { "c1": "__Italics__",  "c2": "" },
+      { "c1": "~~Strikethrough~~", "c2": ""},
+      { "c1": "^^highlight^^", "c2": ""},
+      { "c1": "$$E = mc^2$$", "c2": "Latex"},
+      { "c1": "`Code`", "c2": "inline code"},
+      { "c1": "```Code Block```", "c2": "Code block"},
+      { "c1": "[link](https://www.example.com)", "c2": "link"},
+      { "c1": "![image](www.fillmurray.com/50/50)", "c2": "Image"}
+    ]
+    },
+    {
+      "type": "feature",  
+    "topic": "functions",
+    "items": [
       { "c1": "{{alias: }}", "c2": "{{alias: ((block)) text to display}}"},
       { "c1": "{{attr-table: }}", "c2": "{{attr-table: [[size]]" },
       { "c1": "{{calc: }}", "c2": "{{calc: 4+5 }} or {{calc: ((block)) + ((block))}}" },
@@ -149,14 +151,43 @@ const data = [
       { "c1": "{{TaoOfRoam}}", "c2": "Shows a spinning astrolabe, a favourite icon of Roam Research" },
       { "c1": "{{youtube: }}", "c2": "{{youtube: https://youtu.be/ojwIIzRC8oU}}" }
     ]
-  },
-  {
+    },
+    {
       "type": "feature",  
-     "topic": "Embeds",
-     "items": [
+    "topic": "Embeds",
+    "items": [
       { "c1": "{{embed: }}",          "c2": "Embeds a block from elsewhere, including all of its children, or a page from elsewhere, without Linked and Unlinked References."},
       { "c1": "{{embed: ((block))}}", "c2": "Block embed"},
       { "c1": "{{embed: [[page]]}}",  "c2": "Page embed"}
+    ]
+    },
+  {
+    "type": "feature",  
+    "topic": "Queries",
+    "items": [
+      { "c1": "{{query}}",  "c2": "{{query: what you're looking for }}"},
+      { "c1": "and",        "c2": "{{query: {and: [[tagA]] [[tagB]]} }"},
+      { "c1": "or",         "c2": "{{query: {or: [[tagA]] [[tagB]]} }"},
+      { "c1": "not",        "c2": "{{query: {not: [[tagA]] [[tagB]]} }"},
+      { "c1": "between",    "c2": "{{query: {between: [[January 1st, 2020]] [[today]]} }"},
+      { "c1": "date operators",      "c2": "today, tomorrow, yesterday, last week, next week, last month, next month"},
+      { "c1": "and not",    "c2": "{{query: {and:[[Singapore]] {not:[[London]]} } }}"},
+      { "c1": "and between","c2": "{{query: {and: [[TODO]] {between: [[January 1st, 2020]] [[Today]]} } }}"},
+      { "c1": "self-reference",   "c2": "After:  {{[[query]]: {and:[[Singapore]] [[London]] {not:[[query]]} } }}"},
+      { "c1": "pages",   "c2": "use page name in the query instead of a tag"},
+      { "c1": "Examples",   "c2": "{{query: {and: [[Investing]] {or: [[Articles]] [[People]]}}}}\n{{query: {and: [[Investing]] {or: [[Articles]] [[People]]} {not: [[Startups]]} }}}"}
+    ]
+  },
+  {
+    "type": "example",  
+    "topic": "Queries examples",
+    "items": [
+      { "c1": "<em>And Or:</em><br/>{{query: {and: [[Investing]] {or: [[Articles]] [[People]]}}}}"},
+      { "c1": "<em>And Or Not:</em><br/>{{query: {and: [[Investing]] {or: [[Articles]] [[People]]} {not: [[Startups]]} }}}"},
+      { "c1": "<em>Specific dates:</em><br/>{{query: {and: [[TODO]] {between: [[April 8th, 2020]] [[March 7th, 2020]]}}}}"},
+      { "c1": "<em>Relative dates:</em><br/>{{query: {and: [[TODO]] {between: [[today]] [[last week]]}}}}"},
+      { "c1": "<em>Due today, not Overdue:</em>{{query: {and: [[TODO]] {not: [[Overdue Tasks]]}{between: [[today]] [[today]]}}}}"},
+      { "c1": ""}
     ]
   },
   {
@@ -194,17 +225,29 @@ const data = [
       "type": "feature",  
      "topic": "#roamcult",
      "items": [
-      { "c1": "roamhacks.com", "c2": "Great summary of roam featurs. Also major source of help for this quick reference"},
-      { "c1": "", "c2": ""},
-      { "c1": "", "c2": ""},
-      { "c1": "", "c2": ""},
-      { "c1": "", "c2": ""},
-      { "c1": "", "c2": ""},
-      { "c1": "", "c2": ""},
-      { "c1": "", "c2": ""}
+      { "c1": "<a href='https://forum.roamresearch.com/' target='_blank'>Roam Support Forums</a>",  "c2": "The official place for discussing roam"},
+      { "c1": "<a href='https://roamhacks.com' target='_blank'>roamhacks.com</a>", "c2": "Great summary of roam featurs. Also major source of help for this quick reference"},
+      { "c1": "<a href='https://twitter.com/search?q=%23roamcult' target='_blank'>Twitter</a>", "c2": "Twitter: Follow @roamresearch and the founder Conor White-Sullivan’s account @Conaw. Search for the <a href='https://twitter.com/search?q=%23roamcult' target='_blank'>#roamcult</a> hashtag!"},
+      { "c1": "<a href='https://www.roambrain.com/' target='_blank'>https://www.roambrain.com/</a>",  "c2": "Enter the deep theory of roam and its culture"},
+      { "c1": "<a href='https://www.roamtips.com/' target='_blank'>roamtips.com</a>",  "c2": "useful tips to help you master roam"},
+      // { "c1": "<a href='' target='_blank'></a>",  "c2": ""},
+      // { "c1": "<a href='' target='_blank'></a>",  "c2": ""},
+      // { "c1": "<a href='' target='_blank'></a>",  "c2": ""},
+      // { "c1": "<a href='' target='_blank'></a>",  "c2": ""},
+     
+    ]
+  },
+  {
+      "type": "example",  
+     "topic": "About",
+     "items": [
+      { "c1": "This tools is designed to be a quick reference to all the features of Roam via keyboard, functions and formatting.<br/><br/>"},
+      { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a>"},
+      { "c1": "DM with me bugs, suggestions and whatever."}
     ]
   }
 
+ 
 
 
   // ,
@@ -240,6 +283,21 @@ const data = [
   //   ]
   // }
 
+  // ,
+  // {
+  //     "type": "example",  
+  //    "topic": "",
+  //    "items": [
+  //     { "c1": ""},
+  //     { "c1": ""},
+  //     { "c1": ""},
+  //     { "c1": ""},
+  //     { "c1": ""},
+  //     { "c1": ""},
+  //     { "c1": ""},
+  //     { "c1": ""}
+  //   ]
+  // }
 
 ]
 

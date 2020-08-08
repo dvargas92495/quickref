@@ -16,9 +16,7 @@ methods: {
     const topicId =  'rqrTopicHeader-' + e.srcElement.id.replace('rqrtli-','')
 
     document.querySelectorAll('.rqrTopicActive').forEach(function(oldE) {
-      console.log(oldE)
       oldE.className="rqrTopicListItem"    
-      console.log(oldE)
     });     
     e.srcElement.className="rqrTopicActive"
     document.getElementById(topicId).scrollIntoView()
