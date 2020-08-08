@@ -1,6 +1,6 @@
 import Vue      from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
 import rqrPopup from './components/popup.mjs'
-import data     from './components/data.mjs'
+import data     from './data.mjs'
 
 // Function to dynamically add a new CSS File to the current site 
 function addCSSToPage(tagId, cssToAdd) {

@@ -242,8 +242,8 @@ const data = [
      "topic": "About",
      "items": [
       { "c1": "This tools is designed to be a quick reference to all the features of Roam via keyboard, functions and formatting.<br/><br/>"},
-      { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a>"},
-      { "c1": "DM with me bugs, suggestions and whatever."}
+      { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a>. <br/>DM with me bugs, suggestions and whatever.<br/><br/>"},
+      { "c1": "If RoamMonkey is installed, here are some custom keyboard enhancements.<br/><br/>Alt+Shift+/  Toggle sidebar"}      
     ]
   }
 
