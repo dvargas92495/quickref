@@ -5,7 +5,7 @@ const data = [
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Search bar",                   "c2": "Ctrl-u",        "c3": "⌘-u" },
-                { "c1": "Move up / down in search bar", "c2": "Ctrl-j Ctrl-k", "c3": "⌘-j ⌘-k" },
+                { "c1": "Move up / down in search bar", "c2": "Ctrl-j Ctrl-k", "c3": "Ctrl-j Ctrl-k" },
                 { "c1": "Search page",                  "c2": "Ctrl-f",        "c3": "⌘-f" },
                 { "c1": "Return to page",               "c2": "Ctrl-Enter",    "c3": "⌘-Enter" },
                 { "c1": "Daily Notes Page",             "c2": "Alt-d",         "c3": "Ctrl-Shift-d" },
@@ -107,7 +107,7 @@ const data = [
                 { "c1": "Undo",                      "c2": "Ctrl-z", "c3": "⌘-z" },
                 { "c1": "Redo",                      "c2": "Ctrl-y", "c3": "⌘-Shift-z" },
                 { "c1": "Move character for./back.", "c2": "",       "c3": "Ctrl-f / Ctrl-b" },
-                { "c1": "Swap characters",           "c2": "", "     c3": "Ctrl-t" }
+                { "c1": "Swap characters",           "c2": "",      "c3": "Ctrl+t" }
               ]
   },
   {
@@ -238,7 +238,7 @@ const data = [
      "topic": "About",
      "items": [
                 { "c1": "This tools is designed to be a quick reference to all the features of Roam via keyboard, functions and formatting.<br/><br/>" },
-                { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a>. <br/>DM with me bugs, suggestions and whatever.<br/><br/>" },
+                { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a>. <br/>DM me with bugs, suggestions and whatever.<br/><br/>" },
                 { "c1": "If RoamMonkey is installed, here are some custom keyboard enhancements.<br/><br/>Alt+Shift+/  Toggle sidebar" }      
               ]
   }
