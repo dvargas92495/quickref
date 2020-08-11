@@ -55,7 +55,7 @@ export default {
   <div class="rqrcontrol">
     <div class="rqrControlHeader">
       <div class="rqrControlHeaderLabel">
-        Quick reference
+        Quick Reference
       </div>
       <input id="rqrControlHeaderInput" class="rqrControlHeaderInput" placeholder="Search..."  type="text"
              v-model="query" 
