@@ -19,7 +19,7 @@ function addCSSToPage(tagId, cssToAdd) {
 
 if(window.hostingSite === undefined ) {
   //used for testing
-  addCSSToPage('rqrCSS', '/rqr.css') 
+  addCSSToPage('rqrCSS', 'https://roam-quickref.glitch.me/rqr.css') 
 } else {
   addCSSToPage('rqrCSS', window.hostingSite + 'rqr.css') 
 }
