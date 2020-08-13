@@ -8,6 +8,7 @@ const data = [
                 { "c1": "Move up / down in search bar", "c2": "Ctrl-j Ctrl-k", "c3": "Ctrl-j Ctrl-k" },
                 { "c1": "Search page",                  "c2": "Ctrl-f",        "c3": "⌘-f" },
                 { "c1": "Return to page",               "c2": "Ctrl-Enter",    "c3": "⌘-Enter" },
+                { "c1": "Edit 1st node  in page (when nothing selected)", "c2": "Ctrl-Enter",    "c3": "⌘-Enter" },
                 { "c1": "Daily Notes Page",             "c2": "Alt-d",         "c3": "Ctrl-Shift-d" },
                 { "c1": "Follow link under cursor",     "c2": "Ctrl-o",        "c3": "Ctrl-o" },
                 { "c1": "Move to start of block",       "c2": "Ctrl-Home",     "c3": "Ctrl-a" },
