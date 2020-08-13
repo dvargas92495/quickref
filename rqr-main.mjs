@@ -11,6 +11,7 @@ function addCSSToPage(tagId, cssToAdd) {
   var cssLink = document.createElement('link')
       cssLink.type  = 'text/css' 
       cssLink.rel   = 'stylesheet';  
+      cssLink.crossorigin ="anonymous"
       cssLink.href  = cssToAdd
       cssLink.id    = tagId
       cssLink.async = false
