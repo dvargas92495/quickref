@@ -14,10 +14,16 @@ export default {
     rqrTopic,
     rqrTopicList
   },
+  mounted() {
+      document.getElementById('rqrControlHeaderInput1').focus()
+    document.addEventListener('keydown', (e)=> {
+      if( e.ctrlKey==true  &&  e.key=='H' ) {
+        e.preventDefault();
+        parent.postMessage("roamquickrefclosewindow", "*")  
+      }
+    })
+  },
   methods: {
-    hideQuickRef: function (event) {
-      window.keyboardProcessorRQF()
-    },
     queryChange: function (event) {
       this.getFilteredData()
     },
@@ -44,6 +50,9 @@ export default {
         })          
         this.copyRefs = newArray
       }
+    },
+    hideQuickRef: function(event){
+      parent.postMessage("roamquickrefclosewindow", "*")
     }
   },
   watch: { 
@@ -54,16 +63,10 @@ export default {
   template: `
   <div class="rqrcontrol">
     <div class="rqrControlHeader">
-      <div class="rqrControlHeaderLabel">
-        Quick Reference
-      </div>
-      <input id="rqrControlHeaderInput" class="rqrControlHeaderInput" placeholder="Search..."  type="text"
+      <input id="rqrControlHeaderInput1" class="rqrControlHeaderInput" placeholder="Search..."  type="text"
              v-model="query" 
              v-on:input="queryChange" 
              v-on:keyup.escape="hideQuickRef">
-      <div class="rqrControlHeaderCloseButton" v-on:click="hideQuickRef">
-        x
-      </div>
     </div>
     <div>
       <div class="rqrContentArea">
