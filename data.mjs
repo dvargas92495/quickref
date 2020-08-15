@@ -46,6 +46,7 @@ const data = [
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Open/create page in Sidebar (from Search bar)", "c2": "Shift-Enter",  "c3": "Shift-Enter" },
+                { "c1": "Open Day notes",                                "c2": "Shift-click",  "c3": "Shift-click" },
                 { "c1": "Open link in Sidebar",                          "c2": "Shift-click",  "c3": "Shift-click" },
                 { "c1": "Open link in Sidebar (when editing)",           "c2": "Ctrl-Shift-o", "c3": "Ctrl-Shift-o" }
               ]
@@ -128,7 +129,7 @@ const data = [
     },
     {
       "type": "feature",  
-     "topic": "functions",
+     "topic": "Functions",
      "items": [
                 { "c1": "{{alias: }}", "c2": "{{alias: ((block)) text to display}}" },
                 { "c1": "{{attr-table: }}", "c2": "{{attr-table: [[size]]" },
@@ -228,18 +229,18 @@ const data = [
      "items": [
                 { "c1": "<a href='https://forum.roamresearch.com/' target='_blank'>Roam Support Forums</a>",  
                   "c2": "The official place for discussing roam" },
-                { "c1": "<a href='https://roamhacks.com' target='_blank'>roamhacks.com</a>", 
-                  "c2": "Great summary of roam featurs. Also major source of help for this quick reference" },
                 { "c1": "<a href='https://twitter.com/search?q=%23roamcult' target='_blank'>Twitter</a>", 
                   "c2": "Twitter: Follow @roamresearch and the founder Conor White-Sullivan’s account @Conaw. Search for the <a href='https://twitter.com/search?q=%23roamcult' target='_blank'>#roamcult</a> hashtag!" },
-                { "c1": "<a href='https://www.roambrain.com/' target='_blank'>https://www.roambrain.com/</a>",  
+                { "c1": "<a href='https://roamhacks.com' target='_blank'>RoamHacks.com</a>", 
+                  "c2": "Great summary of roam featurs. Also major source of help for this quick reference" },
+                { "c1": "<a href='https://www.roamstack.com/' target='_blank'>RoamStack</a>",  
+                  "c2": "Enter the deep theory of roam and its culture" },
+                { "c1": "<a href='https://www.roambrain.com/' target='_blank'>RoamBrain.com/</a>",  
                   "c2": "Enter the deep theory of roam and its culture" },
                 { "c1": "<a href='https://www.roamtips.com/' target='_blank'>roamtips.com</a>",  
                   "c2": "useful tips to help you master roam" },
                 { "c1": "<a href='https://twitter.com/RoamFm' target='_blank'>RoamFM Podcast</a>",  
-                  "c2": "Conversations with #roamcult"},
-                { "c1": "<a href='https://twitter.com/RoamHacker' target='_blank'>@RoamHacker</a>",  
-                  "c2": "RoamHacker at twitter"}
+                  "c2": "Conversations with #roamcult"}
                 // { "c1": "<a href='' target='_blank'></a>",  "c2": ""},
               ]
   },
@@ -249,7 +250,7 @@ const data = [
      "items": [
                 { "c1": "This tools is designed to be a quick reference to all the features of Roam via keyboard, functions and formatting.<br/><br/>" },
                 { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a>. <br/>DM me with bugs, suggestions and whatever.<br/><br/>" },
-                { "c1": "If RoamMonkey is installed, here are some custom keyboard enhancements.<br/><br/>Alt+Shift+/  Toggle sidebar" }      
+                { "c1": "Credits to:><br/> <a href='https://www.roamhacks.com/' target='_blank'>roamhacks.com</a> for their tips. <br/><a href='https://twitter.com/beauhaan' target='_blank'>@beauhaan</a> - Thanks to Beau Haan for creative input " },
               ]
   }
 
