@@ -1,7 +1,7 @@
 const data = [
   {
       "type": "keyboard",  
-     "topic": "Working with lists",
+     "topic": "Working with Lists",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Search bar",                   "c2": "Ctrl-u",        "c3": "⌘-u" },
@@ -102,7 +102,7 @@ const data = [
   },
   {
       "type": "keyboard",  
-     "topic": "Other shortcuts",
+     "topic": "Other Shortcuts",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Pop up helpers",            "c2": "/",      "c3": "/" },
@@ -182,7 +182,7 @@ const data = [
   },
   {
       "type": "example",  
-     "topic": "Queries examples",
+     "topic": "Queries Examples",
      "items": [
                 { "c1": "<em>And Or:</em><br/>{{query: {and: [[Investing]] {or: [[Articles]] [[People]]}}}}" },
                 { "c1": "<em>And Or Not:</em><br/>{{query: {and: [[Investing]] {or: [[Articles]] [[People]]} {not: [[Startups]]} }}}" },
