@@ -17,6 +17,17 @@ const data = [
   },
   {
       "type": "keyboard",  
+     "topic": "Search",
+    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
+     "items": [
+                { "c1": "Search all pages",                    "c2": "Ctrl-u",          "c3": "⌘-u" },
+                { "c1": "Navigate down/up in search dropdown", "c2": "Ctrl-j / Ctrl-k", "c3": "Ctrl-j / Ctrl-k" },
+                { "c1": "Page/Block search (must be editing a block)", "c2": "Ctrl-Shift+9", "c3": "Ctrl-Shift+9" },
+                { "c1": "Search in current page",              "c2": "Ctrl-f",          "c3": "⌘-f" }
+              ]
+  },
+  {
+      "type": "keyboard",  
      "topic": "Blocks",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
@@ -48,17 +59,8 @@ const data = [
                 { "c1": "Open/create page in Sidebar (from Search bar)", "c2": "Shift-Enter",  "c3": "Shift-Enter" },
                 { "c1": "Open Day notes",                                "c2": "Shift-click",  "c3": "Shift-click" },
                 { "c1": "Open link in Sidebar",                          "c2": "Shift-click",  "c3": "Shift-click" },
-                { "c1": "Open link in Sidebar (when editing)",           "c2": "Ctrl-Shift-o", "c3": "Ctrl-Shift-o" }
-              ]
-  },
-  {
-      "type": "keyboard",  
-     "topic": "Search",
-    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
-     "items": [
-                { "c1": "Search all pages",                    "c2": "Ctrl-u",          "c3": "⌘-u" },
-                { "c1": "Navigate down/up in search dropdown", "c2": "Ctrl-j / Ctrl-k", "c3": "Ctrl-j / Ctrl-k" },
-                { "c1": "Search in current page",              "c2": "Ctrl-f",          "c3": "⌘-f" }
+                { "c1": "Open link in Sidebar (when editing)",           "c2": "Ctrl-Shift-o", "c3": "Ctrl-Shift-o" },
+                { "c1": "Open mentions in Sidebar ",                     "c2": "WinKey-Shift-click", "c3": "⌘-Shift-click" }
               ]
   },
   {

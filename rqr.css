@@ -54,11 +54,26 @@ input[type=text]:focus{
 .rqrContentAreaTopics {
     color:              black !important;
     overflow:           scroll; 
-    scrollbar-width:    none; 
+    scrollbar-width:    10px; 
     width:              100%;
-    margin-top:         8px;
+    margin-top:         14px;
+    height:             320px;
 }
 
+::-webkit-scrollbar {
+    overflow: visible;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 1px 1px 1px 6px;
+    min-height: 28px;
+    padding: 100px 0 0; 
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.07);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.07); 
+}
 
 .rqrTopicList {
     padding-top:        4px;
@@ -83,14 +98,14 @@ input[type=text]:focus{
 
 .rqrTopicHeader {
     color:              black !important;
-    padding-top:    8px;
-    height:         35px; 
+    height:         25px; 
     font-weight:    bold; 
 }
 
 .rqrTopicTable {
     width:              100%;
     border-collapse:    collapse;
+    margin-bottom:      5px;
 }
 
 .rqrTopicTableHeader {
@@ -102,7 +117,7 @@ input[type=text]:focus{
 
 .rqrTableRow {
     color:              black !important;
-    border-bottom:  1px dashed lightgrey; 
+/*     border-bottom:  1px dashed lightgrey;  */
     width:          100%;
     table-layout:   fixed;overflow-wrap: break-word;
 }
@@ -113,7 +128,8 @@ input[type=text]:focus{
 
 .rqrTableRow, td {
     color:              black !important;
-    padding-bottom: 5px;
+    padding-top:    3px; 
+    padding-bottom: 3px;
     padding-right:  5px;
     vertical-align: top;
 }
