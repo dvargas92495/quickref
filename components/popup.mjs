@@ -77,7 +77,7 @@ export default {
           </div>  
         </div>
         <div class="rqrContentAreaTopics">
-            <rqr-topic v-for="topic in copyRefs" :key="topic.topic" :topic="topic"></rqr-topic>
+          <rqr-topic v-for="topic in copyRefs" :key="topic.topic" :topic="topic"></rqr-topic>
         </div>
       </div>  
     </div>

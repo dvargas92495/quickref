@@ -1,10 +1,23 @@
 export default {
   name: 'rqr-topic',
-  props:  ['topic' ] ,
+  props:  ['topic' ],
+  mounted: function () {
+    this.$nextTick(function () {
+      var observer = new IntersectionObserver(function(entries) {
+        if(entries[0].isIntersecting === true && window.pauseScrolling === false ) {
+          document.querySelectorAll('.rqrTopicActive').forEach(function(oldE) {
+            oldE.className="rqrTopicListItem"    
+          });     
+          document.querySelector('#' + entries[0].target.id.replace('rqrTopicHeader','rqrtli')).className="rqrTopicActive"
+        }
+      }, {  rootMargin: '0px 0px -810px', threshold: [1] });
+      observer.observe(document.querySelector("#" + 'rqrTopicHeader-' + this.topic.id ));
+    })
+  },
   template: `
-  <div class="rqrTopic" style="margin:10px;">
+  <div class="rqrTopic">
 
-    <div class="rqrTopicHeader" v-bind:id="'rqrTopicHeader-'+topic.topic">
+    <div class="rqrTopicHeader" v-bind:id="'rqrTopicHeader-' + topic.id  ">
         {{topic.topic}}
     </div>
 
@@ -35,8 +48,8 @@ export default {
       </template>
 
     </table>
-
   </div>
+
 
 ` 
 }

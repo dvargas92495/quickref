@@ -1,6 +1,7 @@
 import rqrPopup from './components/popup.mjs'
 import data     from './data.mjs'
 
+
 (function() {
   let vm = new Vue({
     el: '#app',
@@ -14,6 +15,7 @@ import data     from './data.mjs'
       rqrPopup
     },
     mounted : function() {
+      window.pauseScrolling = false
       this.references = data
     }
   })
