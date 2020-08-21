@@ -1,10 +1,11 @@
 const data = [
   {
-      "type": "keyboard",  
+      "type": "keyboard",
+        "id": 1000,
      "topic": "Working with lists",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Search bar",                   "c2": "Ctrl–U",        "c3": "⌘–U" },
+                { "c1": "Search bar",                   "c2": "Ctrl–U",        "c3": "⌘–U Text" },
                 { "c1": "Navigate up/down in search bar",   "c2": "Ctrl–J / Ctrl–K", "c3": "Ctrl–J / Ctrl–K" },
                 { "c1": "Search page",                  "c2": "Ctrl–F",        "c3": "⌘–F" },
                 { "c1": "Return to page",               "c2": "Ctrl–Enter",    "c3": "⌘–Enter" },
@@ -17,6 +18,7 @@ const data = [
   },
   {
       "type": "keyboard",  
+        "id": 1001,
      "topic": "Search",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
@@ -28,6 +30,7 @@ const data = [
   },
   {
       "type": "keyboard",  
+        "id": 1002,
      "topic": "Blocks",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
@@ -54,6 +57,7 @@ const data = [
   },
   {
       "type": "keyboard",  
+        "id": 1003,
      "topic": "Sidebar",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
@@ -66,6 +70,7 @@ const data = [
   },
   {
       "type": "keyboard",  
+        "id": 1004,
      "topic": "Visuals",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
@@ -78,7 +83,8 @@ const data = [
   },
   {
       "type": "keyboard",  
-     "topic": "Formatting",
+         "id": 1005,
+    "topic": "Formatting",
    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Heading 0",                 "c2": "Ctrl–Alt–0", "c3": "⌘–Alt–0" },
@@ -95,6 +101,7 @@ const data = [
   },
   {
       "type": "keyboard",  
+        "id": 1006,
      "topic": "Version control",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
@@ -106,6 +113,7 @@ const data = [
   },
   {
       "type": "keyboard",  
+        "id": 1007,
      "topic": "Other shortcuts",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
@@ -119,6 +127,7 @@ const data = [
   },
   {
       "type": "feature",  
+        "id": 1008,
      "topic": "Markdown",
      "items": [
                 { "c1": "Bold",                           "c2": "**Bold**" },
@@ -134,6 +143,7 @@ const data = [
     },
     {
       "type": "feature",  
+        "id": 1009,
      "topic": "Functions",
      "items": [
                 { "c1": "{{alias: }}", "c2": "{{alias: ((Block)) Text}}" },
@@ -161,6 +171,7 @@ const data = [
     },
     {
       "type": "feature",  
+        "id": 1010,
      "topic": "Embeds",
      "items": [
                 { "c1": "{{embed: ((Block))}}", "c2": "Embeds a Block from elsewhere, including all of its children<br> <small><i>Changes made to the Block will be reflected at the source" },
@@ -169,6 +180,7 @@ const data = [
     },
   {
       "type": "feature",  
+        "id": 1011,
      "topic": "Queries",
      "items": [
                 { "c1": "{{query:}}",  "c2": "Queries are a way to ask questions and filter the answers of your Roam database <br><small><i>Pages and hashtags are interchangeable"  },
@@ -184,6 +196,7 @@ const data = [
   },
   {
       "type": "example",  
+        "id": 1012,
      "topic": "Queries examples",
      "items": [
                 { "c1": "{{query: {and: [[Investing]] {or: [[Articles]] [[People]]}}}} <br><small><i>Shows all results with Investing and Articles or Investing and People" },
@@ -196,7 +209,8 @@ const data = [
   },
   {
       "type": "feature",  
-     "topic": "/Slash commands",
+        "id": 1013,
+     "topic": "Slash commands",
      "items": [
                 { "c1": "/TODO",          "c2": "Creates a check box, when clicked becomes {{DONE}}" },
                 { "c1": "/Current Time",  "c2": "Creates a time-stamp of the current time in 24h format" },
@@ -227,6 +241,7 @@ const data = [
   },
     {
       "type": "feature",  
+        "id": 1014,
      "topic": "#RoamCult",
      "items": [
                 { "c1": "<a href='https://forum.roamresearch.com/' target='_blank'>Roam Support Forums</a>",  
@@ -248,11 +263,12 @@ const data = [
   },
   {
       "type": "example",  
+        "id": 1015,
      "topic": "About",
      "items": [
                 { "c1": "This tool is designed to be a Quick Reference to all the features of Roam Research via keyboard, functions and formatting.<br/><br/>" },
                 { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a><br/>DM me with bugs, suggestions and whatever<br/><br/>" },
-                { "c1": "<b>Credits to:</b><br/> <a href='https://www.roamhacks.com/' target='_blank'> 👏🏼 RoamHacks.com</a> for their tips <br/><a href='https://twitter.com/beauhaan' target='_blank'>👏🏼 Beau Haan</a> for the creative input, follow him on Twitter " },
+                { "c1": "<b>Credits to:</b><br/> <a href='https://www.roamhacks.com/' target='_blank'>👏🏼 RoamHacks.com</a> for their tips <br/><a href='https://twitter.com/beauhaan' target='_blank'>👏🏼 Beau Haan</a> for the creative input, follow him on Twitter <br/><a href='https://twitter.com/billpetro' target='_blank'>👏🏼 Bill Petro</a> for experience and calmness.  " },
               ]
   }
 

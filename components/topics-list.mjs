@@ -2,7 +2,7 @@ let originalHoverColor=''
 
 export default {
 name: 'rqr-topics-list',
-props:  ['topic', 'index' ] ,
+props:  ['topic', 'index' ],
 methods: {
   //v-bind:id="'rqrTopicHeader-'+topic.topic"
   mouseover: function(e){
@@ -14,12 +14,15 @@ methods: {
   },    
   click: function(e){
     const topicId =  'rqrTopicHeader-' + e.srcElement.id.replace('rqrtli-','')
-
     document.querySelectorAll('.rqrTopicActive').forEach(function(oldE) {
       oldE.className="rqrTopicListItem"    
     });     
     e.srcElement.className="rqrTopicActive"
+    window.pauseScrolling = true
     document.getElementById(topicId).scrollIntoView()
+    setTimeout( ()=>{
+          window.pauseScrolling = false
+    },250)
   }
 },
 template: `
@@ -29,7 +32,7 @@ template: `
           v-on:click="click" 
           v-on:mouseover="mouseover" 
           v-on:mouseleave="mouseleave" 
-          v-bind:id="'rqrtli-' + topic.topic">
+          v-bind:id="'rqrtli-' + topic.id">
           {{topic.topic}}
       </div>
     </div>
