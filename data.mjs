@@ -5,15 +5,15 @@ const data = [
      "topic": "Working with lists",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Search bar",                   "c2": "Ctrl–U",        "c3": "⌘–U Text" },
-                { "c1": "Navigate up/down in search bar",   "c2": "Ctrl–J / Ctrl–K", "c3": "Ctrl–J / Ctrl–K" },
-                { "c1": "Search page",                  "c2": "Ctrl–F",        "c3": "⌘–F" },
-                { "c1": "Return to page",               "c2": "Ctrl–Enter",    "c3": "⌘–Enter" },
-                { "c1": "Edit 1st node in page <br>(when nothing selected)", "c2": "Ctrl–Enter",    "c3": "⌘–Enter" },
-                { "c1": "Daily Notes page",             "c2": "Alt–D",         "c3": "Ctrl–Shift–D" },
-                { "c1": "Follow link under cursor",     "c2": "Ctrl–O",        "c3": "Ctrl–O" },
-                { "c1": "Move to start of block",       "c2": "Ctrl–Home",     "c3": "Ctrl–A" },
-                { "c1": "Move to end of block",         "c2": "Ctrl–End",      "c3": "Ctrl–E" }
+                { "c1": "Search bar",                   "c2": "Ctrl-U",        "c3": "⌘-U Text" },
+                { "c1": "Navigate up/down in search bar",   "c2": "Ctrl-J / Ctrl-K", "c3": "Ctrl-J / Ctrl-K" },
+                { "c1": "Search page",                  "c2": "Ctrl-F",        "c3": "⌘-F" },
+                { "c1": "Return to page",               "c2": "Ctrl-Enter",    "c3": "⌘-Enter" },
+                { "c1": "Edit 1st node in page <br>(when nothing selected)", "c2": "Ctrl-Enter",    "c3": "⌘-Enter" },
+                { "c1": "Daily Notes page",             "c2": "Alt-D",         "c3": "Ctrl-Shift-D" },
+                { "c1": "Follow link under cursor",     "c2": "Ctrl-O",        "c3": "Ctrl-O" },
+                { "c1": "Move to start of block",       "c2": "Ctrl-Home",     "c3": "Ctrl-A" },
+                { "c1": "Move to end of block",         "c2": "Ctrl-End",      "c3": "Ctrl-E" }
               ]
   },
   {
@@ -22,10 +22,10 @@ const data = [
      "topic": "Search",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Search all pages",                    "c2": "Ctrl–U",          "c3": "⌘–U" },
-                { "c1": "Navigate up/down in search dropdown", "c2": "Ctrl–J / Ctrl–K", "c3": "Ctrl–J / Ctrl–K" },
-                { "c1": "Page/Block search <br>(must be editing a block)", "c2": "Ctrl–Shift–9", "c3": "Ctrl–Shift–9" },
-                { "c1": "Search in current page",              "c2": "Ctrl–F",          "c3": "⌘–F" }
+                { "c1": "Search all pages",                    "c2": "Ctrl-U",          "c3": "⌘-U" },
+                { "c1": "Navigate up/down in search dropdown", "c2": "Ctrl-J / Ctrl-K", "c3": "Ctrl-J / Ctrl-K" },
+                { "c1": "Page/Block search <br>(must be editing a block)", "c2": "Ctrl-Shift-9", "c3": "Ctrl-Shift-9" },
+                { "c1": "Search in current page",              "c2": "Ctrl-F",          "c3": "⌘-F" }
               ]
   },
   {
@@ -36,23 +36,23 @@ const data = [
      "items": [
                 { "c1": "New block",                          "c2": "Enter",          "c3": "Enter"          },
                 { "c1": "Indent block",                       "c2": "Tab",            "c3": "Tab"      },
-                { "c1": "Un-indent block",                     "c2": "Shift–Tab",      "c3": "Shift–Tab"  },
-                { "c1": "Move block up",                      "c2": "Alt–Shift–Up Arrow",  "c3": "⌘–Shift–Up Arrow"  },
-                { "c1": "Move block down",                    "c2": "Alt–Shift–Down Arrow", "c3": "⌘–Shift–Down Arrow"  },
-                { "c1": "New line within block",               "c2": "Shift–Enter",    "c3": "Shift–Enter"  },
-                { "c1": "Zoom-in to block",                   "c2": "Alt–Right Arrow",      "c3": "⌘–Period (.) <br>⌘–Shift–Period (.) <br><small><i>(Firefox/Safari)"  },
-                { "c1": "Zoom-out of block",                  "c2": "Alt–Left Arrow",       "c3": "⌘–Comma (,) <br>⌘–Shift–Comma (,) <br><small><i>(Firefox/Safari)"  },
-                { "c1": "Expand block",                       "c2": "Ctrl–Down Arrow",      "c3": "⌘–Down Arrow"  },
-                { "c1": "Collapse block",                           "c2": "Ctrl–Up Arrow",        "c3": "⌘–Up Arrow"  },
-                { "c1": "Select text in current block",       "c2": "Ctrl–A",         "c3": "⌘–A"  },
-                { "c1": "Select current block",               "c2": "Shift–Up–Up <i>or</i> Shift–Down–Down",      "c3": "Shift–Up–Up <i>or</i> Shift–Down–Down"  },
-                { "c1": "Select current block & block above", "c2": "Shift–Up–Up–Up", "c3": "Shift–Up–Up–Up"  },
-                { "c1": "Select current block & block below", "c2": "Shift–Down–Down–Down", "c3": "Shift–Down–Down–Down"  },
-                { "c1": "Select all blocks on page",          "c2": "Ctrl–Shift–A",   "c3": "⌘–Shift–A"  },
-                { "c1": "Jump to start of block",           "c2": "Ctrl–Home", "c3": "Ctrl–A"  },
-                { "c1": "Jump to end of block",             "c2": "Ctrl–End", "c3": "Ctrl–E"  },
-                { "c1": "Delete to end of block",             "c2": "Ctrl–K",         "c3": "Ctrl–K"  },
-                { "c1": "Paste the text deleted using Ctrl–K", "c2": "Ctrl–Y",   "c3": "Ctrl–Y"  }
+                { "c1": "Un-indent block",                     "c2": "Shift-Tab",      "c3": "Shift-Tab"  },
+                { "c1": "Move block up",                      "c2": "Alt-Shift-Up Arrow",  "c3": "⌘-Shift-Up Arrow"  },
+                { "c1": "Move block down",                    "c2": "Alt-Shift-Down Arrow", "c3": "⌘-Shift-Down Arrow"  },
+                { "c1": "New line within block",               "c2": "Shift-Enter",    "c3": "Shift-Enter"  },
+                { "c1": "Zoom-in to block",                   "c2": "Alt-Right Arrow",      "c3": "⌘-Period (.) <br>⌘-Shift-Period (.) <br><small><i>(Firefox/Safari)"  },
+                { "c1": "Zoom-out of block",                  "c2": "Alt-Left Arrow",       "c3": "⌘-Comma (,) <br>⌘-Shift-Comma (,) <br><small><i>(Firefox/Safari)"  },
+                { "c1": "Expand block",                       "c2": "Ctrl-Down Arrow",      "c3": "⌘-Down Arrow"  },
+                { "c1": "Collapse block",                           "c2": "Ctrl-Up Arrow",        "c3": "⌘-Up Arrow"  },
+                { "c1": "Select text in current block",       "c2": "Ctrl-A",         "c3": "⌘-A"  },
+                { "c1": "Select current block",               "c2": "Shift-Up-Up <i>or</i> Shift-Down-Down",      "c3": "Shift-Up-Up <i>or</i> Shift-Down-Down"  },
+                { "c1": "Select current block & block above", "c2": "Shift-Up-Up-Up", "c3": "Shift-Up-Up-Up"  },
+                { "c1": "Select current block & block below", "c2": "Shift-Down-Down-Down", "c3": "Shift-Down-Down-Down"  },
+                { "c1": "Select all blocks on page",          "c2": "Ctrl-Shift-A",   "c3": "⌘-Shift-A"  },
+                { "c1": "Jump to start of block",           "c2": "Ctrl-Home", "c3": "Ctrl-A"  },
+                { "c1": "Jump to end of block",             "c2": "Ctrl-End", "c3": "Ctrl-E"  },
+                { "c1": "Delete to end of block",             "c2": "Ctrl-K",         "c3": "Ctrl-K"  },
+                { "c1": "Paste the text deleted using Ctrl-K", "c2": "Ctrl-Y",   "c3": "Ctrl-Y"  }
               ]
   },
   {
@@ -61,11 +61,11 @@ const data = [
      "topic": "Sidebar",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Open/create page in right Sidebar (from search)", "c2": "Shift–Enter",  "c3": "Shift–Enter" },
-                { "c1": "Open Daily Notes in right Sidebar (from left Sidebar)",       "c2": "Shift–Click",  "c3": "Shift–Click" },
-                { "c1": "Open link in right Sidebar",                          "c2": "Shift–Click",  "c3": "Shift–Click" },
-                { "c1": "Open link in right Sidebar (when editing)",           "c2": "Ctrl–Shift–O", "c3": "Ctrl–Shift–O" },
-                { "c1": "Open mentions in right Sidebar",                     "c2": "WinKey–Shift–click", "c3": "⌘–Shift–Click" }
+                { "c1": "Open/create page in right Sidebar (from search)", "c2": "Shift-Enter",  "c3": "Shift-Enter" },
+                { "c1": "Open Daily Notes in right Sidebar (from left Sidebar)",       "c2": "Shift-Click",  "c3": "Shift-Click" },
+                { "c1": "Open link in right Sidebar",                          "c2": "Shift-Click",  "c3": "Shift-Click" },
+                { "c1": "Open link in right Sidebar (when editing)",           "c2": "Ctrl-Shift-O", "c3": "Ctrl-Shift-O" },
+                { "c1": "Open mentions in right Sidebar",                     "c2": "WinKey-Shift-click", "c3": "⌘-Shift-Click" }
               ]
   },
   {
@@ -74,11 +74,11 @@ const data = [
      "topic": "Visuals",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Toggle [[brackets]]",           "c2": "Ctrl–C <small>⇒</small> Ctrl–B",  "c3": "Ctrl–C <small>⇒</small> Ctrl–B" },
-                { "c1": "Toggle your icon",          "c2": "Ctrl–C <small>⇒</small> Ctrl–S",  "c3": "Ctrl–C <small>⇒</small> Ctrl–S" },
-               { "c1": "Toggle edit icon",          "c2": "Ctrl–C <small>⇒</small> Ctrl–C <small>⇒</small> Ctrl–S",  "c3": "Ctrl–C <small>⇒</small> Ctrl–C <small>⇒</small> Ctrl–S" },
-                { "c1": "Toggle block preview",  "c2": "Ctrl–C <small>⇒</small> Ctrl–P",  "c3": "Ctrl–C <small>⇒</small> Ctrl–P" },
-                { "c1": "Cycle [[name/spaces]]",       "c2": "Ctrl–C <small>⇒</small> Ctrl–L",  "c3": "Ctrl–C <small>⇒</small> Ctrl–L" }
+                { "c1": "Toggle [[brackets]]",           "c2": "Ctrl-C <small>⇒</small> Ctrl-B",  "c3": "Ctrl-C <small>⇒</small> Ctrl-B" },
+                { "c1": "Toggle your icon",          "c2": "Ctrl-C <small>⇒</small> Ctrl-S",  "c3": "Ctrl-C <small>⇒</small> Ctrl-S" },
+               { "c1": "Toggle edit icon",          "c2": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S",  "c3": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S" },
+                { "c1": "Toggle block preview",  "c2": "Ctrl-C <small>⇒</small> Ctrl-P",  "c3": "Ctrl-C <small>⇒</small> Ctrl-P" },
+                { "c1": "Cycle [[name/spaces]]",       "c2": "Ctrl-C <small>⇒</small> Ctrl-L",  "c3": "Ctrl-C <small>⇒</small> Ctrl-L" }
               ]
   },
   {
@@ -87,16 +87,16 @@ const data = [
     "topic": "Formatting",
    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Heading 0",                 "c2": "Ctrl–Alt–0", "c3": "⌘–Alt–0" },
-                { "c1": "Heading 1",                 "c2": "Ctrl–Alt–1", "c3": "⌘–Alt–1" },
-                { "c1": "Heading 2",                 "c2": "Ctrl–Alt–2", "c3": "⌘–Alt–2" },
-                { "c1": "Heading 3",                 "c2": "Ctrl–Alt–3", "c3": "⌘–Alt–3" },
-                { "c1": "Bold ",                     "c2": "Ctrl–B",     "c3": "⌘–B" },
-                { "c1": "Italics ",                  "c2": "Ctrl–I",     "c3": "⌘–I" },
-                { "c1": "Strikethrough",             "c2": "<small><i>(none)</i></small>",     "c3": "⌘–Y" },
-                { "c1": "Highlight ",                "c2": "Ctrl–H",     "c3": "⌘–H <br>⌘–Shift–H <br><small><i>(Firefox/Safari)" },
-                { "c1": "Toggle TODO/DONE",         "c2": "Ctrl–Enter", "c3": "⌘–Enter" },
-                { "c1": "Create web link",                  "c2": "Ctrl–K",     "c3": "⌘–K" }
+                { "c1": "Heading 0",                 "c2": "Ctrl-Alt-0", "c3": "⌘-Alt-0" },
+                { "c1": "Heading 1",                 "c2": "Ctrl-Alt-1", "c3": "⌘-Alt-1" },
+                { "c1": "Heading 2",                 "c2": "Ctrl-Alt-2", "c3": "⌘-Alt-2" },
+                { "c1": "Heading 3",                 "c2": "Ctrl-Alt-3", "c3": "⌘-Alt-3" },
+                { "c1": "Bold ",                     "c2": "Ctrl-B",     "c3": "⌘-B" },
+                { "c1": "Italics ",                  "c2": "Ctrl-I",     "c3": "⌘-I" },
+                { "c1": "Strikethrough",             "c2": "<small><i>(none)</i></small>",     "c3": "⌘-Y" },
+                { "c1": "Highlight ",                "c2": "Ctrl-H",     "c3": "⌘-H <br>⌘-Shift-H <br><small><i>(Firefox/Safari)" },
+                { "c1": "Toggle TODO/DONE",         "c2": "Ctrl-Enter", "c3": "⌘-Enter" },
+                { "c1": "Create web link",                  "c2": "Ctrl-K",     "c3": "⌘-K" }
               ]
   },
   {
@@ -105,10 +105,10 @@ const data = [
      "topic": "Version control",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Add a version of the block",               "c2": "Ctrl–Comma (,)",       "c3": "Ctrl–Comma (,)" },
-                { "c1": "Cycle versions to the right",               "c2": "Ctrl–Shift–Period (.)", "c3": "Ctrl–Shift–Period (.)" },
-                { "c1": "Cycle versions to the left",                "c2": "Ctrl–Shift–Comma (,)", "c3": "Ctrl–Shift–Comma (,)" },
-                { "c1": "Expand all versions into their own blocks", "c2": "Ctrl–Period (.)",       "c3": "Ctrl–Period (.)" }
+                { "c1": "Add a version of the block",               "c2": "Ctrl-Comma (,)",       "c3": "Ctrl-Comma (,)" },
+                { "c1": "Cycle versions to the right",               "c2": "Ctrl-Shift-Period (.)", "c3": "Ctrl-Shift-Period (.)" },
+                { "c1": "Cycle versions to the left",                "c2": "Ctrl-Shift-Comma (,)", "c3": "Ctrl-Shift-Comma (,)" },
+                { "c1": "Expand all versions into their own blocks", "c2": "Ctrl-Period (.)",       "c3": "Ctrl-Period (.)" }
               ]
   },
   {
@@ -118,11 +118,11 @@ const data = [
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Slash autocomplete",            "c2": "/",      "c3": "/" },
-                { "c1": "Undo",                      "c2": "Ctrl–Z", "c3": "⌘–Z" },
-                { "c1": "Redo",                      "c2": "Ctrl–Y", "c3": "⌘–Shift–Z" },
-                { "c1": "Move cursor forwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl–F" },
-                { "c1": "Move cursor backwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl–B" },
-                { "c1": "Swap characters between cursor",           "c2": "<small><i>(none)</i></small>",      "c3": "Ctrl–T" }
+                { "c1": "Undo",                      "c2": "Ctrl-Z", "c3": "⌘-Z" },
+                { "c1": "Redo",                      "c2": "Ctrl-Y", "c3": "⌘-Shift-Z" },
+                { "c1": "Move cursor forwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl-F" },
+                { "c1": "Move cursor backwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl-B" },
+                { "c1": "Swap characters between cursor",           "c2": "<small><i>(none)</i></small>",      "c3": "Ctrl-T" }
               ]
   },
   {
@@ -153,7 +153,7 @@ const data = [
                 { "c1": "{{word-count}}", "c2": "" },
                 { "c1": "{{chart: }}", "c2": "" },
                 { "c1": "{{date}}", "c2": "Creates a date-picker" },
-                { "c1": "{{diagram}}", "c2": "Nest underneath to add blocks<br>Alt–Drag between two blocks to create a connecting line <br>Atl–Drag a box to create a group <br>Click–Hold–Delete to delete a group" },
+                { "c1": "{{diagram}}", "c2": "Nest underneath to add blocks<br>Alt-Drag between two blocks to create a connecting line <br>Atl-Drag a box to create a group <br>Click-Hold-Delete to delete a group" },
                 { "c1": "{{TODO}}", "c2": "{{TODO}} <i>or</i> {{DONE}}" },
                 { "c1": "{{encrypt}}", "c2": "Encrypts a block of text with a passphrase" },
                 { "c1": "{{iframe: }}", "c2": "Embed a website into your Roam page" },
