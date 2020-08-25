@@ -5,11 +5,11 @@ const data = [
      "topic": "Working with lists",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Search bar",                   "c2": "Ctrl-U",        "c3": "⌘-U Text" },
+                { "c1": "Search bar",                   "c2": "Ctrl-U",        "c3": "CMD-U Text" },
                 { "c1": "Navigate up/down in search bar",   "c2": "Ctrl-J / Ctrl-K", "c3": "Ctrl-J / Ctrl-K" },
-                { "c1": "Search page",                  "c2": "Ctrl-F",        "c3": "⌘-F" },
-                { "c1": "Return to page",               "c2": "Ctrl-Enter",    "c3": "⌘-Enter" },
-                { "c1": "Edit 1st node in page <br>(when nothing selected)", "c2": "Ctrl-Enter",    "c3": "⌘-Enter" },
+                { "c1": "Search page",                  "c2": "Ctrl-F",        "c3": "CMD-F" },
+                { "c1": "Return to page",               "c2": "Ctrl-Enter",    "c3": "CMD-Enter" },
+                { "c1": "Edit 1st node in page <br>(when nothing selected)", "c2": "Ctrl-Enter",    "c3": "CMD-Enter" },
                 { "c1": "Daily Notes page",             "c2": "Alt-D",         "c3": "Ctrl-Shift-D" },
                 { "c1": "Follow link under cursor",     "c2": "Ctrl-O",        "c3": "Ctrl-O" },
                 { "c1": "Move to start of block",       "c2": "Ctrl-Home",     "c3": "Ctrl-A" },
@@ -22,10 +22,10 @@ const data = [
      "topic": "Search",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Search all pages",                    "c2": "Ctrl-U",          "c3": "⌘-U" },
+                { "c1": "Search all pages",                    "c2": "Ctrl-U",          "c3": "CMD-U" },
                 { "c1": "Navigate up/down in search dropdown", "c2": "Ctrl-J / Ctrl-K", "c3": "Ctrl-J / Ctrl-K" },
                 { "c1": "Page/Block search <br>(must be editing a block)", "c2": "Ctrl-Shift-9", "c3": "Ctrl-Shift-9" },
-                { "c1": "Search in current page",              "c2": "Ctrl-F",          "c3": "⌘-F" }
+                { "c1": "Search in current page",              "c2": "Ctrl-F",          "c3": "CMD-F" }
               ]
   },
   {
@@ -37,18 +37,18 @@ const data = [
                 { "c1": "New block",                          "c2": "Enter",          "c3": "Enter"          },
                 { "c1": "Indent block",                       "c2": "Tab",            "c3": "Tab"      },
                 { "c1": "Un-indent block",                     "c2": "Shift-Tab",      "c3": "Shift-Tab"  },
-                { "c1": "Move block up",                      "c2": "Alt-Shift-Up Arrow",  "c3": "⌘-Shift-Up Arrow"  },
-                { "c1": "Move block down",                    "c2": "Alt-Shift-Down Arrow", "c3": "⌘-Shift-Down Arrow"  },
+                { "c1": "Move block up",                      "c2": "Alt-Shift-Up Arrow",  "c3": "CMD-Shift-Up Arrow"  },
+                { "c1": "Move block down",                    "c2": "Alt-Shift-Down Arrow", "c3": "CMD-Shift-Down Arrow"  },
                 { "c1": "New line within block",               "c2": "Shift-Enter",    "c3": "Shift-Enter"  },
-                { "c1": "Zoom-in to block",                   "c2": "Alt-Right Arrow",      "c3": "⌘-Period (.) <br>⌘-Shift-Period (.) <br><small><i>(Firefox/Safari)"  },
-                { "c1": "Zoom-out of block",                  "c2": "Alt-Left Arrow",       "c3": "⌘-Comma (,) <br>⌘-Shift-Comma (,) <br><small><i>(Firefox/Safari)"  },
-                { "c1": "Expand block",                       "c2": "Ctrl-Down Arrow",      "c3": "⌘-Down Arrow"  },
-                { "c1": "Collapse block",                           "c2": "Ctrl-Up Arrow",        "c3": "⌘-Up Arrow"  },
-                { "c1": "Select text in current block",       "c2": "Ctrl-A",         "c3": "⌘-A"  },
+                { "c1": "Zoom-in to block",                   "c2": "Alt-Right Arrow",      "c3": "CMD-Period (.) <br>CMD-Shift-Period (.) <br><small><i>(Firefox/Safari)"  },
+                { "c1": "Zoom-out of block",                  "c2": "Alt-Left Arrow",       "c3": "CMD-Comma (,) <br>CMD-Shift-Comma (,) <br><small><i>(Firefox/Safari)"  },
+                { "c1": "Expand block",                       "c2": "Ctrl-Down Arrow",      "c3": "CMD-Down Arrow"  },
+                { "c1": "Collapse block",                           "c2": "Ctrl-Up Arrow",        "c3": "CMD-Up Arrow"  },
+                { "c1": "Select text in current block",       "c2": "Ctrl-A",         "c3": "CMD-A"  },
                 { "c1": "Select current block",               "c2": "Shift-Up-Up <i>or</i> Shift-Down-Down",      "c3": "Shift-Up-Up <i>or</i> Shift-Down-Down"  },
                 { "c1": "Select current block & block above", "c2": "Shift-Up-Up-Up", "c3": "Shift-Up-Up-Up"  },
                 { "c1": "Select current block & block below", "c2": "Shift-Down-Down-Down", "c3": "Shift-Down-Down-Down"  },
-                { "c1": "Select all blocks on page",          "c2": "Ctrl-Shift-A",   "c3": "⌘-Shift-A"  },
+                { "c1": "Select all blocks on page",          "c2": "Ctrl-Shift-A",   "c3": "CMD-Shift-A"  },
                 { "c1": "Jump to start of block",           "c2": "Ctrl-Home", "c3": "Ctrl-A"  },
                 { "c1": "Jump to end of block",             "c2": "Ctrl-End", "c3": "Ctrl-E"  },
                 { "c1": "Delete to end of block",             "c2": "Ctrl-K",         "c3": "Ctrl-K"  },
@@ -65,7 +65,7 @@ const data = [
                 { "c1": "Open Daily Notes in right Sidebar (from left Sidebar)",       "c2": "Shift-Click",  "c3": "Shift-Click" },
                 { "c1": "Open link in right Sidebar",                          "c2": "Shift-Click",  "c3": "Shift-Click" },
                 { "c1": "Open link in right Sidebar (when editing)",           "c2": "Ctrl-Shift-O", "c3": "Ctrl-Shift-O" },
-                { "c1": "Open mentions in right Sidebar",                     "c2": "WinKey-Shift-click", "c3": "⌘-Shift-Click" }
+                { "c1": "Open mentions in right Sidebar",                     "c2": "WinKey-Shift-click", "c3": "CMD-Shift-Click" }
               ]
   },
   {
@@ -87,16 +87,16 @@ const data = [
     "topic": "Formatting",
    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Heading 0",                 "c2": "Ctrl-Alt-0", "c3": "⌘-Alt-0" },
-                { "c1": "Heading 1",                 "c2": "Ctrl-Alt-1", "c3": "⌘-Alt-1" },
-                { "c1": "Heading 2",                 "c2": "Ctrl-Alt-2", "c3": "⌘-Alt-2" },
-                { "c1": "Heading 3",                 "c2": "Ctrl-Alt-3", "c3": "⌘-Alt-3" },
-                { "c1": "Bold ",                     "c2": "Ctrl-B",     "c3": "⌘-B" },
-                { "c1": "Italics ",                  "c2": "Ctrl-I",     "c3": "⌘-I" },
-                { "c1": "Strikethrough",             "c2": "<small><i>(none)</i></small>",     "c3": "⌘-Y" },
-                { "c1": "Highlight ",                "c2": "Ctrl-H",     "c3": "⌘-H <br>⌘-Shift-H <br><small><i>(Firefox/Safari)" },
-                { "c1": "Toggle TODO/DONE",         "c2": "Ctrl-Enter", "c3": "⌘-Enter" },
-                { "c1": "Create web link",                  "c2": "Ctrl-K",     "c3": "⌘-K" }
+                { "c1": "Heading 0",                 "c2": "Ctrl-Alt-0", "c3": "CMD-Alt-0" },
+                { "c1": "Heading 1",                 "c2": "Ctrl-Alt-1", "c3": "CMD-Alt-1" },
+                { "c1": "Heading 2",                 "c2": "Ctrl-Alt-2", "c3": "CMD-Alt-2" },
+                { "c1": "Heading 3",                 "c2": "Ctrl-Alt-3", "c3": "CMD-Alt-3" },
+                { "c1": "Bold ",                     "c2": "Ctrl-B",     "c3": "CMD-B" },
+                { "c1": "Italics ",                  "c2": "Ctrl-I",     "c3": "CMD-I" },
+                { "c1": "Strikethrough",             "c2": "<small><i>(none)</i></small>",     "c3": "CMD-Y" },
+                { "c1": "Highlight ",                "c2": "Ctrl-H",     "c3": "CMD-H <br>CMD-Shift-H <br><small><i>(Firefox/Safari)" },
+                { "c1": "Toggle TODO/DONE",         "c2": "Ctrl-Enter", "c3": "CMD-Enter" },
+                { "c1": "Create web link",                  "c2": "Ctrl-K",     "c3": "CMD-K" }
               ]
   },
   {
@@ -118,8 +118,8 @@ const data = [
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Slash autocomplete",            "c2": "/",      "c3": "/" },
-                { "c1": "Undo",                      "c2": "Ctrl-Z", "c3": "⌘-Z" },
-                { "c1": "Redo",                      "c2": "Ctrl-Y", "c3": "⌘-Shift-Z" },
+                { "c1": "Undo",                      "c2": "Ctrl-Z", "c3": "CMD-Z" },
+                { "c1": "Redo",                      "c2": "Ctrl-Y", "c3": "CMD-Shift-Z" },
                 { "c1": "Move cursor forwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl-F" },
                 { "c1": "Move cursor backwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl-B" },
                 { "c1": "Swap characters between cursor",           "c2": "<small><i>(none)</i></small>",      "c3": "Ctrl-T" }
@@ -158,9 +158,9 @@ const data = [
                 { "c1": "{{encrypt}}", "c2": "Encrypts a block of text with a passphrase" },
                 { "c1": "{{iframe: }}", "c2": "Embed a website into your Roam page" },
                 { "c1": "{{kanban}}", "c2": "Add columns and cards by nesting bullets below <br>First level nested bullets are columns <br>Second level nested bullets are cards <br>Moving cards will move the blocks below" },
-                { "c1": "{{mentions: }}", "c2": "Pulls in “Linked References” and “Unlinked References” sections from a Page" },
+                { "c1": "{{mentions: }}", "c2": "Pulls in 'Linked References' and 'Unlinked References' sections from a Page" },
                 { "c1": "{{or: }}", "c2": "Creates a simple dropdown list <br>{{or: Apples | Carrots | Bananas}}" },
-                { "c1": "{{orphans}}", "c2": "Provide a list of “orphaned” blocks that can’t be found on any page, because their parent block was deleted" },
+                { "c1": "{{orphans}}", "c2": "Provide a list of 'orphaned' blocks that can’t be found on any page, because their parent block was deleted" },
                 { "c1": "{{pdf: }}", "c2": "Upload a pdf with /Upload Image or File <br>{{pdf: https://sitepath/file.pdf}} " },
                 { "c1": "{{POMO}}", "c2": "Creates a Pomodoro timer with a 25 min timer <br><small><i>There is no alert once it finishes" },
                 { "c1": "{{slider}}", "c2": "Creates a slider from 0 to 10 <br>For pages with multiple authors, you can see thier icon underneath their rating" },
@@ -247,7 +247,7 @@ const data = [
                 { "c1": "<a href='https://forum.roamresearch.com/' target='_blank'>Roam Support Forums</a>",  
                   "c2": "The official support forum for discussing Roam" },
                 { "c1": "<a href='https://twitter.com/search?q=%23roamcult' target='_blank'>Twitter</a>", 
-                  "c2": "Follow <a href='https://twitter.com/RoamResearch' target='_blank'>@RoamResearch</a> and the founder Conor White-Sullivan’s account <a href='https://twitter.com/conaw' target='_blank'>@Conaw</a><br><small><i>Search for the <a href='https://twitter.com/search?q=%23roamcult' target='_blank'>#roamcult</a> hashtag" },
+                  "c2": "Follow <a href='https://twitter.com/RoamResearch' target='_blank'>@RoamResearch</a> and the founder Conor White-Sullivan's account <a href='https://twitter.com/conaw' target='_blank'>@Conaw</a><br><small><i>Search for the <a href='https://twitter.com/search?q=%23roamcult' target='_blank'>#roamcult</a> hashtag" },
                 { "c1": "<a href='https://roamhacks.com' target='_blank'>RoamHacks.com</a>", 
                   "c2": "Great summary of Roam's features and also a major source of help for this Quick Reference" },
                 { "c1": "<a href='https://www.roamstack.com/' target='_blank'>RoamStack.com</a>",  
@@ -268,7 +268,7 @@ const data = [
      "items": [
                 { "c1": "This tool is designed to be a Quick Reference to all the features of Roam Research via keyboard, functions and formatting.<br/><br/>" },
                 { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a><br/>DM me with bugs, suggestions and whatever<br/><br/>" },
-                { "c1": "<b>Credits to:</b><br/> <a href='https://www.roamhacks.com/' target='_blank'>👏🏼 RoamHacks.com</a> for their tips <br/><a href='https://twitter.com/beauhaan' target='_blank'>👏🏼 Beau Haan</a> for the creative input, follow him on Twitter <br/><a href='https://twitter.com/billpetro' target='_blank'>👏🏼 Bill Petro</a> for experience and calmness.  " },
+                { "c1": "<b>Credits to:</b><br/> <a href='https://www.roamhacks.com/' target='_blank'>RoamHacks.com</a> for their tips <br/><a href='https://twitter.com/beauhaan' target='_blank'>Beau Haan</a> for the creative input, follow him on Twitter <br/><a href='https://twitter.com/billpetro' target='_blank'>Bill Petro</a> for experience and calmness.  " },
               ]
   }
 
