@@ -93,6 +93,7 @@ const data = [
                 { "c1": "Heading 3",                 "c2": "Ctrl-Alt-3", "c3": "CMD-Alt-3" },
                 { "c1": "Bold ",                     "c2": "Ctrl-B",     "c3": "CMD-B" },
                 { "c1": "Italics ",                  "c2": "Ctrl-I",     "c3": "CMD-I" },
+                { "c1": "Latex ",                    "c2": "Alt-Shift+4","c3": "" },
                 { "c1": "Strikethrough",             "c2": "<small><i>(none)</i></small>",     "c3": "CMD-Y" },
                 { "c1": "Highlight ",                "c2": "Ctrl-H",     "c3": "CMD-H <br>CMD-Shift-H <br><small><i>(Firefox/Safari)" },
                 { "c1": "Toggle TODO/DONE",         "c2": "Ctrl-Enter", "c3": "CMD-Enter" },
