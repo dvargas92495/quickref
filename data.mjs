@@ -36,10 +36,18 @@ const data = [
      "items": [
                 { "c1": "New block",                          "c2": "Enter",          "c3": "Enter"          },
                 { "c1": "Indent block",                       "c2": "Tab",            "c3": "Tab"      },
-                { "c1": "Un-indent block",                     "c2": "Shift-Tab",      "c3": "Shift-Tab"  },
+                { "c1": "Un-indent block",                    "c2": "Shift-Tab",      "c3": "Shift-Tab"  },
+                { "c1": "Go to next block",                   "c2": "Down Arrow",     "c3": "Down Arrow / Ctrl-N"  },
+                { "c1": "Go to previous block",               "c2": "Up Arrow",       "c3": "Shift-Tab / Ctrl-P"  },
                 { "c1": "Move block up",                      "c2": "Alt-Shift-Up Arrow",  "c3": "CMD-Shift-Up Arrow"  },
                 { "c1": "Move block down",                    "c2": "Alt-Shift-Down Arrow", "c3": "CMD-Shift-Down Arrow"  },
-                { "c1": "New line within block",               "c2": "Shift-Enter",    "c3": "Shift-Enter"  },
+                { "c1": "New line within block",              "c2": "Shift-Enter",    "c3": "Shift-Enter"  },
+                { "c1": "Character - move back",              "c2": "",         "c3": "Ctrl-B"          },
+                { "c1": "Character - move forward",           "c2": "",         "c3": "Ctrl-F"          },
+                { "c1": "Character - delete back",            "c2": "",         "c3": "Ctrl-H"          },
+                { "c1": "Character - delete forward",         "c2": "",         "c3": "Ctrl-D"          },
+                { "c1": "Move to beginning of block",         "c2": "",         "c3": "Ctrl-A"          },
+                { "c1": "Move to end of block",               "c2": "",         "c3": "Ctrl-E"          },
                 { "c1": "Zoom-in to block",                   "c2": "Alt-Right Arrow",      "c3": "CMD-Period (.) <br>CMD-Shift-Period (.) <br><small><i>(Firefox/Safari)"  },
                 { "c1": "Zoom-out of block",                  "c2": "Alt-Left Arrow",       "c3": "CMD-Comma (,) <br>CMD-Shift-Comma (,) <br><small><i>(Firefox/Safari)"  },
                 { "c1": "Expand block",                       "c2": "Ctrl-Down Arrow",      "c3": "CMD-Down Arrow"  },
@@ -119,6 +127,8 @@ const data = [
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Slash autocomplete",            "c2": "/",      "c3": "/" },
+                { "c1": "∆ Delta command",               "c2": "Alt-Enter",      "c3": "Alt-Enter" },
+                { "c1": "∆ Delta - move with children",  "c2": "Alt-Shift-Enter",      "c3": "Alt-Shift-Enter" },
                 { "c1": "Undo",                      "c2": "Ctrl-Z", "c3": "CMD-Z" },
                 { "c1": "Redo",                      "c2": "Ctrl-Y", "c3": "CMD-Shift-Z" },
                 { "c1": "Move cursor forwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl-F" },
@@ -126,6 +136,18 @@ const data = [
                 { "c1": "Swap characters between cursor",           "c2": "<small><i>(none)</i></small>",      "c3": "Ctrl-T" }
               ]
   },
+  {
+      "type": "keyboard",  
+        "id": 1020,
+     "topic": "Drag/Drop",
+    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
+     "items": [
+                { "c1": "Block Reference",               "c2": "Ctrl and Drag n drop",      "c3": "OPT and Drag n drop" },
+                { "c1": "Block Reference with children", "c2": "Ctrl-Shift Drag n drop", "c3": "OPT-Shift Drag n drop" },
+                { "c1": "Block Reference video demonstration", "c2": "<a target='_blank' href='https://www.loom.com/share/7e611c03917e4e8591a5975fd102eb67'>link</a>", "c3": "" },
+              ]
+  },
+
   {
       "type": "feature",  
         "id": 1008,
@@ -135,6 +157,9 @@ const data = [
                 { "c1": "Italics",                        "c2": "__Italics__" },
                 { "c1": "Strikethrough",                  "c2": "~~Strikethrough~~" },
                 { "c1": "Highlight",                      "c2": "^^Highlight^^" },
+                { "c1": "Heading 1",                      "c2": "# followed by space" },
+                { "c1": "Heading 2",                      "c2": "## followed by space" },
+                { "c1": "Heading 3",                      "c2": "### followed by space" },
                 { "c1": "LaTeX",                         "c2": "$$E = mc^2$$" },
                 { "c1": "Inline code",                             "c2": "`Inline code`" },
                 { "c1": "Code block",                       "c2": "```Code block```" },
@@ -151,6 +176,13 @@ const data = [
                 { "c1": "{{attr-table: }}", "c2": "{{attr-table: [[Page]]" },
                 { "c1": "{{calc: }}", "c2": "{{calc: 4+5 }} <i>or</i> {{calc: ((Block)) + ((Block))}}" },
                 { "c1": "{{character-count}}", "c2": "" },
+                { "c1": "{{[[∆]]:1+2}} ", "c2": "Delta command - Moving Blocks forward to future dates with tracking alias" },
+                { "c1": "",               "c2": "∆ consists of 2 arguments" },
+                { "c1": "",               "c2": "+ <b>Argument 1</b> determines how many days until you start it." },
+                { "c1": "",               "c2": "e.g. {{∆:1+1}}'s argument 1 is \"1\", meaning that it starts tomorrow." },
+                { "c1": "",               "c2": "+ <b>Argument 2</b> determines the subsequent intervals." },
+                { "c1": "",               "c2": "e.g. {{∆: 1+7}}'s argument 2 is \"+7\", meaning that all subsequent intervals are 7 days apart. <br/> e.g. {{∆: 1*2}}'s argument 2 is \"*2\", meaning that the next interval is multiplying the first number (1) by 2, then multiplying that product by 2 again for the next instance, and so on." },
+                { "c1": "",               "c2": "Note:  Currently, division and decimals do not work yet." },
                 { "c1": "{{word-count}}", "c2": "" },
                 { "c1": "{{chart: }}", "c2": "" },
                 { "c1": "{{date}}", "c2": "Creates a date-picker" },
