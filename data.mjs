@@ -69,11 +69,13 @@ const data = [
      "topic": "Sidebar",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Open/create page in right Sidebar (from search)", "c2": "Shift-Enter",  "c3": "Shift-Enter" },
-                { "c1": "Open Daily Notes in right Sidebar (from left Sidebar)",       "c2": "Shift-Click",  "c3": "Shift-Click" },
-                { "c1": "Open link in right Sidebar",                          "c2": "Shift-Click",  "c3": "Shift-Click" },
-                { "c1": "Open link in right Sidebar (when editing)",           "c2": "Ctrl-Shift-O", "c3": "Ctrl-Shift-O" },
-                { "c1": "Open mentions in right Sidebar",                     "c2": "WinKey-Shift-click", "c3": "CMD-Shift-Click" }
+                { "c1": "Toggle open/close right side bar",                      "c2": "Ctrl+Shift+\\", "c3": "CMD+Shift+\\" },
+                { "c1": "Toggle open/close left side bar",                       "c2": "Ctrl+\\",       "c3": "CMD+\\" },
+                { "c1": "Open/create page in right Sidebar (from search)",       "c2": "Shift-Enter",  "c3": "Shift-Enter" },
+                { "c1": "Open Daily Notes in right Sidebar (from left Sidebar)", "c2": "Shift-Click",  "c3": "Shift-Click" },
+                { "c1": "Open link in right Sidebar",                            "c2": "Shift-Click",  "c3": "Shift-Click" },
+                { "c1": "Open link in right Sidebar (when editing)",             "c2": "Ctrl-Shift-O", "c3": "Ctrl-Shift-O" },
+                { "c1": "Open mentions in right Sidebar",                     "  c2": "WinKey-Shift-click", "c3": "CMD-Shift-Click" }
               ]
   },
   {
@@ -84,9 +86,10 @@ const data = [
      "items": [
                 { "c1": "Toggle [[brackets]]",           "c2": "Ctrl-C <small>⇒</small> Ctrl-B",  "c3": "Ctrl-C <small>⇒</small> Ctrl-B" },
                 { "c1": "Toggle your icon",          "c2": "Ctrl-C <small>⇒</small> Ctrl-S",  "c3": "Ctrl-C <small>⇒</small> Ctrl-S" },
-               { "c1": "Toggle edit icon",          "c2": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S",  "c3": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S" },
+                { "c1": "Toggle edit icon",          "c2": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S",  "c3": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S" },
                 { "c1": "Toggle block preview",  "c2": "Ctrl-C <small>⇒</small> Ctrl-P",  "c3": "Ctrl-C <small>⇒</small> Ctrl-P" },
-                { "c1": "Cycle [[name/spaces]]",       "c2": "Ctrl-C <small>⇒</small> Ctrl-L",  "c3": "Ctrl-C <small>⇒</small> Ctrl-L" }
+                { "c1": "Cycle [[name/spaces]]",       "c2": "Ctrl-C <small>⇒</small> Ctrl-L",  "c3": "Ctrl-C <small>⇒</small> Ctrl-L" },
+                { "c1": "Cycle through node levels (slideshow mode). Works at current node level.",       "c2": "Ctrl-C <small>⇒</small> Ctrl-M",  "c3": "Ctrl-C <small>⇒</small> Ctrl-M" }
               ]
   },
   {
