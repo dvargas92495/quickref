@@ -59,8 +59,6 @@ const data = [
                 { "c1": "Select all blocks on page",          "c2": "Ctrl-Shift-A",   "c3": "CMD-Shift-A"  },
                 { "c1": "Jump to start of block",           "c2": "Ctrl-Home", "c3": "Ctrl-A"  },
                 { "c1": "Jump to end of block",             "c2": "Ctrl-End", "c3": "Ctrl-E"  },
-                { "c1": "Delete to end of block",             "c2": "Ctrl-K",         "c3": "Ctrl-K"  },
-                { "c1": "Paste the text deleted using Ctrl-K", "c2": "Ctrl-Y",   "c3": "Ctrl-Y"  }
               ]
   },
   {
@@ -69,8 +67,8 @@ const data = [
      "topic": "Sidebar",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Toggle open/close right side bar",                      "c2": "Ctrl+Shift+\\", "c3": "CMD+Shift+\\" },
-                { "c1": "Toggle open/close left side bar",                       "c2": "Ctrl+\\",       "c3": "CMD+\\" },
+                { "c1": "Toggle open/close right sidebar",                      "c2": "Ctrl+Shift+\\", "c3": "CMD+Shift+\\" },
+                { "c1": "Toggle open/close left sidebar",                       "c2": "Ctrl+\\",       "c3": "CMD+\\" },
                 { "c1": "Open/create page in right Sidebar (from search)",       "c2": "Shift-Enter",  "c3": "Shift-Enter" },
                 { "c1": "Open Daily Notes in right Sidebar (from left Sidebar)", "c2": "Shift-Click",  "c3": "Shift-Click" },
                 { "c1": "Open link in right Sidebar",                            "c2": "Shift-Click",  "c3": "Shift-Click" },
@@ -117,10 +115,11 @@ const data = [
      "topic": "Version control",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Add a version of the block",               "c2": "Ctrl-Comma (,)",       "c3": "Ctrl-Comma (,)" },
-                { "c1": "Cycle versions to the right",               "c2": "Ctrl-Shift-Period (.)", "c3": "Ctrl-Shift-Period (.)" },
-                { "c1": "Cycle versions to the left",                "c2": "Ctrl-Shift-Comma (,)", "c3": "Ctrl-Shift-Comma (,)" },
-                { "c1": "Expand all versions into their own blocks", "c2": "Ctrl-Period (.)",       "c3": "Ctrl-Period (.)" }
+                { "c1": "Add a version of the block",                      "c2": "Ctrl-Comma (,)",       "c3": "Ctrl-Comma (,)" },
+                { "c1": "Converts selected blocks to versions in a block", "c2": "Ctrl-Comma (,)",       "c3": "Ctrl-Comma (,)" },
+                { "c1": "Converts versioned block into separate blocks",   "c2": "Ctrl-Period (.)",       "c3": "Ctrl-Period (.)" },
+                { "c1": "Cycle versions to the right",                     "c2": "Ctrl-Shift-Period (.)", "c3": "Ctrl-Shift-Period (.)" },
+                { "c1": "Cycle versions to the left",                      "c2": "Ctrl-Shift-Comma (,)", "c3": "Ctrl-Shift-Comma (,)" },
               ]
   },
   {
@@ -183,8 +182,8 @@ const data = [
                 { "c1": "∆ Delta",        "c2": "∆ consists of 2 arguments" },
                 { "c1": "∆ Delta",        "c2": "+ <b>Argument 1</b> determines how many days until you start it." },
                 { "c1": "∆ Delta",        "c2": "e.g. {{∆:1+1}}'s argument 1 is \"1\", meaning that it starts tomorrow." },
-                { "c1": "∆ Delta",        "c2": "+ <b>Argument 2</b> determines the subsequent intervals." },
-                { "c1": "∆ Delta",        "c2": "e.g. {{∆: 1+7}}'s argument 2 is \"+7\", meaning that all subsequent intervals are 7 days apart. <br/> e.g. {{∆: 1*2}}'s argument 2 is \"*2\", meaning that the next interval is multiplying the first number (1) by 2, then multiplying that product by 2 again for the next instance, and so on." },
+                { "c1": "∆ Delta",        "c2": "+ <b>Argument 2</b> determines the change in Argument 1 for subsequent intervals." },
+                { "c1": "∆ Delta",        "c2": "e.g. {{∆: 1+1}}'s argument 2 is \"+1\", meaning that the new calculated Argument 1 will be Argument 1 + Argument 2 (1+1=2). The following interval will add Argument 2 to the newly calculated Argument 1 (2+1=3)." },
                 { "c1": "∆ Delta",        "c2": "Note:  Currently, division and decimals do not work yet. Use 0 as argument 1 and it will move the block to today's date" },
                 { "c1": "{{word-count}}", "c2": "" },
                 { "c1": "{{chart: }}", "c2": "" },
