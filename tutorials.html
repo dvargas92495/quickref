@@ -1,7 +1,15 @@
 <html>
 <head>
   <!-- Video display: https://github.com/doesdev/jquery-video-lightning#features -->
-  <script src="https://cdn.jsdelivr.net/npm/video-lightning@3.0.6/dist/videoLightning.min.js" integrity="sha256-avzMy6Rwvz/se3WmbdxQnUTmz8TE6aHHLs+ljmDLhBg=" crossorigin="anonymous"></script>
+  
+<!--   <script src="https://cdn.jsdelivr.net/npm/video-lightning@3.0.6/dist/videoLightning.min.js" integrity="sha256-avzMy6Rwvz/se3WmbdxQnUTmz8TE6aHHLs+ljmDLhBg=" crossorigin="anonymous"></script> -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bigpicture@2.5.3/dist/BigPicture.min.js" integrity="sha256-3/ofhMvHuPgYwI4LJxlDxE+tb6xptGJ6Eo6i92IvH08=" crossorigin="anonymous"></script>
+  <script>
+    function el() { return document.querySelector('#content')};
+    function playYT(videoID) { BigPicture({ el: el(), ytSrc: videoID }) };
+    function playLoom(videoID) { BigPicture({ el: el(), iframeSrc: 'https://www.useloom.com/embed/' + videoID + '?autoplay=1' }) };
+  </script>      
   
 </head>
 <body>
@@ -17,7 +25,7 @@
     padding:0px;
   }
   .section {
-    height: 380px;
+    height: 100%;
     width:179px;
     margins:0px;
     padding:5px;
@@ -37,86 +45,160 @@
     font-size:      10pt;
     padding-bottom: 10px;
   }
-  .itemlink {
-  }
   .itemimage {
     width:   100px;
   }
+  .itemlesson {
+    color: teal;
+    font-size: 10pt;
+  }
 </style>
 
-<!--
-      <div class="item">
-      <div class="itemheader">Live Preview</div>
-      <a class="itemlink" href="" target="_blank">
-        <img class="itemimage" src="">
-      </a><hr>
-    </div>
-          <a  class="video-link" data-video-id="y-PKffm2uI4dk"  class="itemlink" href="https://youtu.be/O3Chd8ECy2A" target="_blank">
-
--->
-
   <div id="content">
+    
     <div class="section">
       <div class="sectionheaders">Roam42 Features</div><hr>
-        <div class="item">
+        <div class="item" onclick="playLoom('f62e0e8f2a6f4d2abfaa828d1f259f23')">
           <div class="itemheader">Live Preview</div>
-            <a class="itemlink" href="https://www.loom.com/share/f62e0e8f2a6f4d2abfaa828d1f259f23" target="abc">
-              <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
-            </a><hr>
-        </div>
-        <div class="item">
+          <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+          <hr>
+      </div>
+      <div class="item" onclick="playLoom('f62082e603014bf69ed0910e66d3cc40')">
           <div class="itemheader">Daily Notes Popup</div>
-            <a class="itemlink" href="https://www.loom.com/share/f62082e603014bf69ed0910e66d3cc40" target="_blank">
-              <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
-            </a><hr>
-        </div>
-        <div class="item">
+          <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+          <hr>
+      </div>
+      <div class="item" onclick="playLoom('')">
           <div class="itemheader">Jump Nav (TBD)</div>
-            <a class="itemlink" href="" target="_blank">
-              <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
-            </a><hr>
-        </div>
+          <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+          <hr>
+      </div>
     </div>
+
     <div class="section">
       <div class="sectionheaders">Learn Roam</div><hr>
+        <div class="item" onclick="playYT('LJZBGJOzhUY')">
+          <div>
+          <div class="itemheader">Query syntax and logic</div>
+            <img class="itemimage" src="https://i.ytimg.com/vi/LJZBGJOzhUY/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAijE5V_ZUb0um1WlDqzcaQyXBqOg">
+          </div><hr>
+        </div>
+      <div><b>Beginner guide</b></div>
+        <div class="item" onclick="playYT('cHzuPptZRe4')">
+          <div class="itemlesson"> 0. Introduction to the Course</div>
+        </div>
+        <div class="item" onclick="playYT('F5EmdX5ANT4')">
+          <div class="itemlesson">1.1: Creating Your First Database in Roam</div>
+        </div>
+        <div class="item" onclick="playYT('')">
+          <div class="itemlesson"> </div>
+        </div>
+        <div class="item" onclick="playYT('s3oBtGZyrqs')">
+          <div class="itemlesson">1.2: Basic Database Layout </div>
+        </div>
+        <div class="item" onclick="playYT('iFxeBP5YXGM')">
+          <div class="itemlesson">1.3: The Help Menu</div>
+        </div>
+        <div class="item" onclick="playYT('yYFdZkv-9Ek')">
+          <div class="itemlesson">1.4: Basics of Tags, Backlinks and Pages </div>
+        </div>
+        <div class="item" onclick="playYT('jcYoT-ZbNzo')">
+          <div class="itemlesson">1.5: Unlinked References </div>
+        </div>
+        <div class="item" onclick="playYT('8DsDLOBwP5A')">
+          <div class="itemlesson">1.6: The Navigation Bar</div>
+        </div>
+        <div class="item" onclick="playYT('CcROLQezGgQ')">
+          <div class="itemlesson">1.7: Soft Line Breaks & Cmd-shift-v</div>
+        </div>
+        <div class="item" onclick="playYT('ZnFyY-BUs3k')">
+          <div class="itemlesson">1.8: The Sidebar </div>
+        </div>
+        <div class="item" onclick="playYT('vENF7EfJgGM')">
+          <div class="itemlesson">1.9: Filtering Pages </div>
+        </div>
+        <div class="item" onclick="playYT('QKkShnsbC54')">
+          <div class="itemlesson">1.10: Block References & Block Embeds </div>
+        </div>
+        <div class="item" onclick="playYT('xEOm7xTyjI8')">
+          <div class="itemlesson">1.11: The Date Picker</div>
+        </div>
+        <div class="item" onclick="playYT('KVlE1h3ABoY')">
+          <div class="itemlesson">1.12: The Backslash Function</div>
+        </div>
+        <div class="item" onclick="playYT('bxVhYPIIA8o')">
+          <div class="itemlesson">1.13: A Brief Word on Attributes</div>
+        </div>
+        <div class="item" onclick="playYT('S2b4hVBY5IE')">
+          <div class="itemlesson">1.14: Keyboard Shortcuts, Part I </div>
+        </div>
+        <div class="item" onclick="playYT('jL7j0K4SMro')">
+          <div class="itemlesson">1.15: Keyboard Shortcuts, Part II </div>
+        </div>
+        <div class="item" onclick="playYT('qwOeMh-kllg')">
+          <div class="itemlesson">2.1: Introduction to Quick Capture</div>
+        </div>
+        <div style="font-size:8pt"><br/>
+        Continue with the course online on <a href="https://www.youtube.com/playlist?list=PLwXSqDdn_CpE934BjXMgmzHnlwXMy41TC">YouTube</a>        
+        </div>    
     </div>
+
     <div class="section">
       <div class="sectionheaders">Great Interviews</div><hr>
-        <div class="item">
-          <div class="video-link" data-video-id="O3Chd8ECy2A">
+        <div class="item" onclick="playYT('O3Chd8ECy2A')">
+          <div>
           <div class="itemheader">Historian Mark Robertson</div>
             <img class="itemimage" src="https://i.ytimg.com/vi/O3Chd8ECy2A/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBfMIinuCWUSBn-XChOrQDiNRyf3A">
           </div><hr>
         </div>
         <div class="item">
-          <div class="video-link" data-video-id="RXXXHN516qc">
+          <div>
+          <div class="itemheader">RoamFM: Tracy Winchell (Journalling)</div>
+              <iframe src="https://www.listennotes.com/embedded/e/28c0aa043e6b4ed1b0004afa098a0675/" height="100px" width="100%" style="width: 1px; min-width: 100%;" loading="lazy" frameborder="0" scrolling="no"></iframe>    
+          </div><hr>
+        </div>      
+        <div class="item" onclick="playYT('RXXXHN516qc')">
+          <div>
             <div class="itemheader">Web guru Maggie Appleton</div>
             <img class="itemimage" src="https://i.ytimg.com/vi/RXXXHN516qc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDWqm_oUVlsB-bNN-6pqC0PpvcgAw">
           </div><hr>
         </div>
-        <div class="item">
-          <div class="video-link" data-video-id="A6PIrVZoZAk">
+        <div class="item" onclick="playYT('A6PIrVZoZAk')">
+          <div>
             <div class="itemheader">Professor Joel Chan</div>
             <img class="itemimage" src="https://i.ytimg.com/vi/A6PIrVZoZAk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBEpLRjad0GV9jI2eTynYiSFXO8Kg">
           </div><hr>
         </div>
-          <div class="video-link" data-video-id="Pdk0tZE68JY">
-            <div class="itemheader">Rosie Campbell</div>
-            <img class="itemimage" src="https://i.ytimg.com/vi/Pdk0tZE68JY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDnp71nz8df1p3LxtSZgpJ9Nv9QIQ">
+        <div class="item">
+          <div>
+          <div class="itemheader">RoamFM: Kahlil Corazo (Project Management) </div>
+              <iframe src="https://www.listennotes.com/embedded/e/5d5ba897abdf4cac996f89147d40926b/" height="100px" width="100%" style="width: 1px; min-width: 100%;" loading="lazy" frameborder="0" scrolling="no"></iframe>    
           </div><hr>
-        </div>    
+        </div>
+        <div class="video-link" data-video-id="Pdk0tZE68JY">
+          <div class="itemheader">Rosie Campbell</div>
+          <img class="itemimage" src="https://i.ytimg.com/vi/Pdk0tZE68JY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDnp71nz8df1p3LxtSZgpJ9Nv9QIQ">
+        </div><hr>
+        <div class="item">
+          <div>
+          <div class="itemheader">RoamFM: David Crandall (Data Architecture) </div>
+              <iframe src="https://www.listennotes.com/embedded/e/2bc4da1b60864575a32a23c976104176/" height="100px" width="100%" style="width: 1px; min-width: 100%;" loading="lazy" frameborder="0" scrolling="no"></iframe>    
+        </div><hr>
+        </div>
+        <div class="video-link" data-video-id="qS4Z_PSM8Xs">
+          <div class="itemheader">Pathwright CEO and Conceptual Designer Paul Johnson</div>
+          <img class="itemimage" src="https://i.ytimg.com/vi/qS4Z_PSM8Xs/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAt0OYFyqoXs9bJQctrdDFaaeSViA">
+        </div><hr>
+        <div class="item">
+          <div>
+          <div class="itemheader">RoamFM: Cherry Sun (Lab Research) </div>
+              <iframe src="https://www.listennotes.com/embedded/e/81c6097a819d4cc080952f137ee3eabf/" height="100px" width="100%" style="width: 1px; min-width: 100%;" loading="lazy" frameborder="0" scrolling="no"></iframe>    
+          </div><hr>
+        </div>
+     </div>    
+
+    
   </div>
 
-  <script>
-    videoLightning({
-        settings: 
-          {
-            autoplay: true, 
-            color: "white",
-            width:  580
-          }, 
-        element: ".video-link"});
-  </script>      
-  
 </body>
 </html>
