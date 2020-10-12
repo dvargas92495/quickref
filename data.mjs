@@ -12,6 +12,7 @@ const data = [
                 { "c1": "Previous day's note",  "c2": "Ctrl-Shift-,", "c3": "" },
                 { "c1": "Jump Nav Help",        "c2": "Meta-j h",     "c3": "Ctrl-j h" },
                 { "c1": "",                     "c2": "",             "c3": "Alt-j h" },
+                { "c1": "",                     "c2": "",             "c3": "CMD-j h" },
                 { "c1": "Live Preview Toggle",  "c2": "Ctrl-Shift-l", "c3": "Alt-l" },
                 { "c1": "Sidebar - open left",  "c2": "Alt-Shift-\\", "c3": ""},
                 { "c1": "Sidebar - open right", "c2": "Alt-Shift-/", "c3": ""},
@@ -26,7 +27,7 @@ const data = [
       "type": "featurecenter",  
      "topic": "Roam42 Jump nav",
      "items": [
-                { "c1": "Activate Jump Nav",                "c2": "Meta-j or Alt-j or Ctrl-j"},
+                { "c1": "Activate Jump Nav",                "c2": "Meta-j or Alt-j or Ctrl-j or CMD-j"},
                 { "c1": "<em>Press Jump nav key, followed by command below</em>",  "c2": ""},
                 { "c1": "",                                 "c2": ""},
                 { "c1": "<b>Page</b>",                      "c2": ""},
