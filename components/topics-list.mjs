@@ -18,10 +18,10 @@ methods: {
       oldE.className="rqrTopicListItem"    
     });     
     e.srcElement.className="rqrTopicActive"
-    window.pauseScrolling = true
+    window.r42rqr.pauseScrolling = true
     document.getElementById(topicId).scrollIntoView()
     setTimeout( ()=>{
-          window.pauseScrolling = false
+          window.r42rqr.pauseScrolling = false
     },250)
   }
 },

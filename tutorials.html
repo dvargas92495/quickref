@@ -1,0 +1,122 @@
+<html>
+<head>
+  <!-- Video display: https://github.com/doesdev/jquery-video-lightning#features -->
+  <script src="https://cdn.jsdelivr.net/npm/video-lightning@3.0.6/dist/videoLightning.min.js" integrity="sha256-avzMy6Rwvz/se3WmbdxQnUTmz8TE6aHHLs+ljmDLhBg=" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+<style>
+  body{
+    margin:5px;
+    padding:0px;
+  }
+  #content {
+    height: 100%;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+  }
+  .section {
+    height: 380px;
+    width:179px;
+    margins:0px;
+    padding:5px;
+    float: left;
+    border-left:1px solid teal;
+    overflow-y: auto;
+  }
+  .sectionheaders {
+    font-size: 13pt;
+    font-weight: bold;
+  }
+  .item {
+    padding:2px
+  }
+  .itemheader {
+    font-weight:    bold;
+    font-size:      10pt;
+    padding-bottom: 10px;
+  }
+  .itemlink {
+  }
+  .itemimage {
+    width:   100px;
+  }
+</style>
+
+<!--
+      <div class="item">
+      <div class="itemheader">Live Preview</div>
+      <a class="itemlink" href="" target="_blank">
+        <img class="itemimage" src="">
+      </a><hr>
+    </div>
+          <a  class="video-link" data-video-id="y-PKffm2uI4dk"  class="itemlink" href="https://youtu.be/O3Chd8ECy2A" target="_blank">
+
+-->
+
+  <div id="content">
+    <div class="section">
+      <div class="sectionheaders">Roam42 Features</div><hr>
+        <div class="item">
+          <div class="itemheader">Live Preview</div>
+            <a class="itemlink" href="https://www.loom.com/share/f62e0e8f2a6f4d2abfaa828d1f259f23" target="abc">
+              <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+            </a><hr>
+        </div>
+        <div class="item">
+          <div class="itemheader">Daily Notes Popup</div>
+            <a class="itemlink" href="https://www.loom.com/share/f62082e603014bf69ed0910e66d3cc40" target="_blank">
+              <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+            </a><hr>
+        </div>
+        <div class="item">
+          <div class="itemheader">Jump Nav (TBD)</div>
+            <a class="itemlink" href="" target="_blank">
+              <img class="itemimage" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png">
+            </a><hr>
+        </div>
+    </div>
+    <div class="section">
+      <div class="sectionheaders">Learn Roam</div><hr>
+    </div>
+    <div class="section">
+      <div class="sectionheaders">Great Interviews</div><hr>
+        <div class="item">
+          <div class="video-link" data-video-id="O3Chd8ECy2A">
+          <div class="itemheader">Historian Mark Robertson</div>
+            <img class="itemimage" src="https://i.ytimg.com/vi/O3Chd8ECy2A/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBfMIinuCWUSBn-XChOrQDiNRyf3A">
+          </div><hr>
+        </div>
+        <div class="item">
+          <div class="video-link" data-video-id="RXXXHN516qc">
+            <div class="itemheader">Web guru Maggie Appleton</div>
+            <img class="itemimage" src="https://i.ytimg.com/vi/RXXXHN516qc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDWqm_oUVlsB-bNN-6pqC0PpvcgAw">
+          </div><hr>
+        </div>
+        <div class="item">
+          <div class="video-link" data-video-id="A6PIrVZoZAk">
+            <div class="itemheader">Professor Joel Chan</div>
+            <img class="itemimage" src="https://i.ytimg.com/vi/A6PIrVZoZAk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBEpLRjad0GV9jI2eTynYiSFXO8Kg">
+          </div><hr>
+        </div>
+          <div class="video-link" data-video-id="Pdk0tZE68JY">
+            <div class="itemheader">Rosie Campbell</div>
+            <img class="itemimage" src="https://i.ytimg.com/vi/Pdk0tZE68JY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDnp71nz8df1p3LxtSZgpJ9Nv9QIQ">
+          </div><hr>
+        </div>    
+  </div>
+
+  <script>
+    videoLightning({
+        settings: 
+          {
+            autoplay: true, 
+            color: "white",
+            width:  580
+          }, 
+        element: ".video-link"});
+  </script>      
+  
+</body>
+</html>

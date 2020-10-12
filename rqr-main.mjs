@@ -16,7 +16,8 @@ import data     from './data.mjs'
       rqrPopup
     },
     mounted : function() {
-      window.pauseScrolling = false
+      window.r42rqr = {}
+      window.r42rqr.pauseScrolling = false
       this.references = data
     }
   })

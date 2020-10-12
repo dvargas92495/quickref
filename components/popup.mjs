@@ -15,9 +15,9 @@ export default {
     rqrTopicList
   },
   mounted() {
-      document.getElementById('rqrControlHeaderInput1').focus()
+    document.getElementById('rqrControlHeaderInput1').focus()
     document.addEventListener('keydown', (e)=> {
-      if( e.ctrlKey==true  &&  e.key=='H' ) {
+      if( (e.ctrlKey==true || e.altKey==true)  &&  e.key=='H' ) {
         e.preventDefault();
         parent.postMessage("roamquickrefclosewindow", "*")  
       }
