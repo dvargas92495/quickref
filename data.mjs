@@ -1,4 +1,72 @@
 const data = [
+    {
+      "type": "keyboard",  
+     "topic": "Roam42 features",
+        "id": 10,
+    "header": {"c1": "Action", "c2": "Primary", "c3": "Alternatives" },
+     "items": [
+                { "c1": "Roam Quick Reference", "c2": "Ctrl-Shift-h", "c3": ""},
+                { "c1": "Convert to date",      "c2": "Alt-Shift-d",  "c3": "" },
+                { "c1": "Jump to date",         "c2": "Alt-Shift-j",  "c3": "" },
+                { "c1": "Next day's note",      "c2": "Ctrl-Shift-.", "c3": "" },
+                { "c1": "Previous day's note",  "c2": "Ctrl-Shift-,", "c3": "" },
+                { "c1": "Jump Nav Help",        "c2": "Meta-j h",     "c3": "Ctrl-j h" },
+                { "c1": "",                     "c2": "",             "c3": "Alt-j h" },
+                { "c1": "Live Preview Toggle",  "c2": "Ctrl-Shift-l", "c3": "Alt-l" },
+                { "c1": "Sidebar - open left",  "c2": "Alt-Shift-\\", "c3": ""},
+                { "c1": "Sidebar - open right", "c2": "Alt-Shift-/", "c3": ""},
+                { "c1": "Daily Notes Popup",    "c2": "Alt-Shift-,", "c3": "" },
+                { "c1": "Dictionary",           "c2": "Alt-Shift-.", "c3": "" },
+                { "c1": "Convert page to Markdown", "c2": "Alt-m", "c3": "" },
+                { "c1": "Strikeout text",       "c2": "Alt-Shift-t", "c3": "" },
+             ]
+  },
+  
+    {
+      "type": "featurecenter",  
+     "topic": "Roam42 Jump nav",
+     "items": [
+                { "c1": "Activate Jump Nav",                "c2": "Meta-j or Alt-j or Ctrl-j"},
+                { "c1": "<em>Press Jump nav key, followed by command below</em>",  "c2": ""},
+                { "c1": "",                                 "c2": ""},
+                { "c1": "<b>Page</b>",                      "c2": ""},
+                { "c1": "Top of page",                      "c2": "t"},
+                { "c1": "Bottom of page",                   "c2": "b"},
+                { "c1": "Expland all",                      "c2": "e"},
+                { "c1": "Collapse all",                     "c2": "c"},
+                { "c1": "Open this page in sidebar",        "c2": "o"},
+                { "c1": "<b>Linked/Unlinked References</b>","c2": ""},
+                { "c1": "Toggle Linked Refs",               "c2": "w"},
+                { "c1": "Toggle Unlinked Refs",             "c2": "z"},
+                { "c1": "Toggle Paernets (page level)",     "c2": "f"},
+                { "c1": "<b>Blocks<b>",                     "c2": ""},
+                { "c1": "Expand children",                  "c2": "v"},
+                { "c1": "Collapse children",                "c2": "p"},
+                { "c1": "Copy block ref",                   "c2": "r"},
+                { "c1": "Copy block ref as alias",          "c2": "s"},
+                { "c1": "Expand all",                       "c2": "x"},
+                { "c1": "Collapse all",                     "c2": "l"},
+                { "c1": "Insert block above",               "c2": "i"},
+                { "c1": "Insert block below",               "c2": "u"},
+                { "c1": "Go up a block",                    "c2": "k"},
+                { "c1": "Go down a block",                  "c2": "j"},
+                { "c1": "Delete block",                     "c2": "d"},
+                { "c1": "Align left",                       "c2": "1"},
+                { "c1": "Center",                           "c2": "2"},
+                { "c1": "Align right ",                     "c2": "3"},
+                { "c1": "Justify",                          "c2": "4"},
+                { "c1": "Add reaction",                     "c2": "a"},
+                { "c1": "<b>Queries<b>",                    "c2": ""},
+                { "c1": "Toggle Queries",                   "c2": "y"},
+                { "c1": "<b>Others<b>",                     "c2": ""},
+                { "c1": "Toggle left sidebar",              "c2": "m"},
+                { "c1": "Toggle right sidebar",             "c2": "n"},
+                { "c1": "Roam42 Help",                      "c2": "q"},
+                { "c1": "Daily Notes Popup",                "c2": ","},
+                { "c1": "Dictionary",                       "c2": "."},
+              ]
+  },
+
   {
       "type": "keyboard",
         "id": 1000,
@@ -79,7 +147,7 @@ const data = [
   {
       "type": "keyboard",  
         "id": 1004,
-     "topic": "Visuals",
+     "topic": "Formatting",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
                 { "c1": "Toggle [[brackets]]",           "c2": "Ctrl-C <small>⇒</small> Ctrl-B",  "c3": "Ctrl-C <small>⇒</small> Ctrl-B" },
@@ -87,15 +155,7 @@ const data = [
                 { "c1": "Toggle edit icon",          "c2": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S",  "c3": "Ctrl-C <small>⇒</small> Ctrl-C <small>⇒</small> Ctrl-S" },
                 { "c1": "Toggle block preview",  "c2": "Ctrl-C <small>⇒</small> Ctrl-P",  "c3": "Ctrl-C <small>⇒</small> Ctrl-P" },
                 { "c1": "Cycle [[name/spaces]]",       "c2": "Ctrl-C <small>⇒</small> Ctrl-L",  "c3": "Ctrl-C <small>⇒</small> Ctrl-L" },
-                { "c1": "Cycle through node levels (slideshow mode). Works at current node level.",       "c2": "Ctrl-C <small>⇒</small> Ctrl-M",  "c3": "Ctrl-C <small>⇒</small> Ctrl-M" }
-              ]
-  },
-  {
-      "type": "keyboard",  
-         "id": 1005,
-    "topic": "Formatting",
-   "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
-     "items": [
+                { "c1": "Cycle through node levels (slideshow mode). Works at current node level.",       "c2": "Ctrl-C <small>⇒</small> Ctrl-M",  "c3": "Ctrl-C <small>⇒</small> Ctrl-M" },
                 { "c1": "Heading 0",                 "c2": "Ctrl-Alt-0", "c3": "CMD-Alt-0" },
                 { "c1": "Heading 1",                 "c2": "Ctrl-Alt-1", "c3": "CMD-Alt-1" },
                 { "c1": "Heading 2",                 "c2": "Ctrl-Alt-2", "c3": "CMD-Alt-2" },
@@ -135,15 +195,7 @@ const data = [
                 { "c1": "Redo",                      "c2": "Ctrl-Y", "c3": "CMD-Shift-Z" },
                 { "c1": "Move cursor forwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl-F" },
                 { "c1": "Move cursor backwards", "c2": "<small><i>(none)</i></small>",       "c3": "Ctrl-B" },
-                { "c1": "Swap characters between cursor",           "c2": "<small><i>(none)</i></small>",      "c3": "Ctrl-T" }
-              ]
-  },
-  {
-      "type": "keyboard",  
-        "id": 1020,
-     "topic": "Drag/Drop",
-    "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
-     "items": [
+                { "c1": "Swap characters between cursor",           "c2": "<small><i>(none)</i></small>",      "c3": "Ctrl-T" },
                 { "c1": "Block Reference",               "c2": "Ctrl and Drag n drop",      "c3": "OPT and Drag n drop" },
                 { "c1": "Block Reference with children", "c2": "Ctrl-Shift Drag n drop", "c3": "OPT-Shift Drag n drop" },
                 { "c1": "Block Reference video demonstration", "c2": "<a target='_blank' href='https://www.loom.com/share/7e611c03917e4e8591a5975fd102eb67'>link</a>", "c3": "" },
@@ -271,29 +323,10 @@ const data = [
                 { "c1": "/YouTube",       "c2": "Embed a YouTube video" },
                 { "c1": "/Mentions",      "c2": "Insert mentions of a Block or Page" },
                 { "c1": "/Word Count",    "c2": "Insert word count for page" },
-                { "c1": "/Query",         "c2": "Insert a query <br><small><i>See Queries section above" }
-              ]
-  },
-    {
-      "type": "feature",  
-        "id": 1014,
-     "topic": "#RoamCult",
-     "items": [
-                { "c1": "<a href='https://forum.roamresearch.com/' target='_blank'>Roam Support Forums</a>",  
-                  "c2": "The official support forum for discussing Roam" },
-                { "c1": "<a href='https://twitter.com/search?q=%23roamcult' target='_blank'>Twitter</a>", 
-                  "c2": "Follow <a href='https://twitter.com/RoamResearch' target='_blank'>@RoamResearch</a> and the founder Conor White-Sullivan's account <a href='https://twitter.com/conaw' target='_blank'>@Conaw</a><br><small><i>Search for the <a href='https://twitter.com/search?q=%23roamcult' target='_blank'>#roamcult</a> hashtag" },
-                { "c1": "<a href='https://roamhacks.com' target='_blank'>RoamHacks.com</a>", 
-                  "c2": "Great summary of Roam's features and also a major source of help for this Quick Reference" },
-                { "c1": "<a href='https://www.roamstack.com/' target='_blank'>RoamStack.com</a>",  
-                  "c2": "Tools, techniques, and workflows to get the most out of Roam Research" },
-                { "c1": "<a href='https://www.roambrain.com/' target='_blank'>RoamBrain.com</a>",  
-                  "c2": "An information hub for Roam Research" },
-                { "c1": "<a href='https://www.roamtips.com/' target='_blank'>RoamTips.com</a>",  
-                  "c2": "Useful tips to help you master Roam" },
-                { "c1": "<a href='https://twitter.com/RoamFm' target='_blank'>RoamFM Podcast</a>",  
-                  "c2": "Conversations with #roamcult"}
-                // { "c1": "<a href='' target='_blank'></a>",  "c2": ""},
+                { "c1": "/Query",         "c2": "Insert a query <br><small><i>See Queries section above" },
+                { "c1": "?disablejs",     "c2": "add this to the URL when starting Roam to disable roam/js <a href='https://youtu.be/_fiWkFlEyPE' target='_blank'>(YouTube Tutorial)</a>" },
+                { "c1": "?disablcss",     "c2": "add this to the URL when starting Roam to disable roam/css" },
+
               ]
   },
   {
@@ -304,10 +337,20 @@ const data = [
                 { "c1": "This tool is designed to be a Quick Reference to all the features of Roam Research via keyboard, functions and formatting.<br/><br/>" },
                 { "c1": "Follow me on Twitter at <a href='https://twitter.com/roamhacker' target='_blank'>@RoamHacker</a><br/>DM me with bugs, suggestions and whatever<br/><br/>" },
                 { "c1": "<b>Credits to:</b><br/> <a href='https://www.roamhacks.com/' target='_blank'>RoamHacks.com</a> for their tips <br/><a href='https://twitter.com/beauhaan' target='_blank'>Beau Haan</a> for the creative input, follow him on Twitter <br/><a href='https://twitter.com/billpetro' target='_blank'>Bill Petro</a> for experience and calmness.  " },
+                { "c1": "" },
+                { "c1": "<b>Roam resources</b>" },                
+                { "c1": "<a href='https://forum.roamresearch.com/' target='_blank'>Roam Support Forums</a> The official support forum for discussing Roam" },
+                { "c1": "<a href='https://twitter.com/search?q=%23roamcult' target='_blank'>Twitter</a> Follow <a href='https://twitter.com/RoamResearch' target='_blank'>@RoamResearch</a> and the founder Conor White-Sullivan's account <a href='https://twitter.com/conaw' target='_blank'>@Conaw</a><br><small><i>Search for the <a href='https://twitter.com/search?q=%23roamcult' target='_blank'>#roamcult</a> hashtag" },
+                { "c1": "<a href='https://roamhacks.com' target='_blank'>RoamHacks.com</a> Great summary of Roam's features and also a major source of help for this Quick Reference" },
+                { "c1": "<a href='https://www.roamstack.com/' target='_blank'>RoamStack.com</a> Tools, techniques, and workflows to get the most out of Roam Research" },
+                { "c1": "<a href='https://www.roambrain.com/' target='_blank'>RoamBrain.com</a> An information hub for Roam Research" },
+                { "c1": "<a href='https://www.roamtips.com/' target='_blank'>RoamTips.com</a> Useful tips to help you master Roam" },
+                { "c1": "<a href='https://twitter.com/RoamFm' target='_blank'>RoamFM Podcast</a> Conversations with #roamcult"}
               ]
-  }
+  },
 
- 
+
+
 
 
   // ,

@@ -4,7 +4,7 @@ export default {
   mounted: function () {
     this.$nextTick(function () {
       var observer = new IntersectionObserver(function(entries) {
-        if(entries[0].isIntersecting === true && window.pauseScrolling === false ) {
+        if(entries[0].isIntersecting === true && window.r42rqr.pauseScrolling === false ) {
           document.querySelectorAll('.rqrTopicActive').forEach(function(oldE) {
             oldE.className="rqrTopicListItem"    
           });     
@@ -24,13 +24,13 @@ export default {
     <table class="rqrTopicTable">
 
       <template v-if="topic.type =='keyboard'">
+        <tr class="rqrTopicTableHeader">
+          <td></td><td>{{topic.header.c2}}</td><td>{{topic.header.c3}}</td>
+        </tr>
         <tr v-for="item in topic.items" class="rqrTableRow"> 
           <td style="width:40%"><span v-html="item.c1"></span></td>
           <td style="width:30%"><span v-html="item.c2"></span></td>
           <td style="width:30%"><span v-html="item.c3"></span></td>
-        </tr>
-        <tr class="rqrTopicTableHeader">
-          <td></td><td>{{topic.header.c2}}</td><td>{{topic.header.c3}}</td>
         </tr>
       </template>
 
@@ -38,6 +38,13 @@ export default {
         <tr v-for="item in topic.items" class="rqrTableRow"> 
           <td style="width:25%"><span v-html="item.c1"></span></td>
           <td style="width:70%"><span v-html="item.c2"></span></td>
+        </tr>
+      </template>
+
+      <template v-if="topic.type == 'featurecenter'">
+        <tr v-for="item in topic.items" class="rqrTableRow"> 
+          <td style="width:50%"><span v-html="item.c1"></span></td>
+          <td style="width:50%"><span v-html="item.c2"></span></td>
         </tr>
       </template>
 
