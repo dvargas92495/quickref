@@ -346,11 +346,12 @@ const data = [
                 { "c1": "<b>Roam resources</b>" },                
                 { "c1": "<a href='https://forum.roamresearch.com/' target='_blank'>Roam Support Forums</a> The official support forum for discussing Roam" },
                 { "c1": "<a href='https://twitter.com/search?q=%23roamcult' target='_blank'>Twitter</a> Follow <a href='https://twitter.com/RoamResearch' target='_blank'>@RoamResearch</a> and the founder Conor White-Sullivan's account <a href='https://twitter.com/conaw' target='_blank'>@Conaw</a><br><small><i>Search for the <a href='https://twitter.com/search?q=%23roamcult' target='_blank'>#roamcult</a> hashtag" },
-                { "c1": "<a href='https://roamhacks.com' target='_blank'>RoamHacks.com</a> Great summary of Roam's features and also a major source of help for this Quick Reference" },
+                { "c1": "<a href='https://bjosephburch.com/ultimate-roam-shortcuts-cheat-sheet/' target='_blank'>Roam Shortcuts</a> Bernard Joseph Burch has put together Roam Shortcuts guide." },
+                { "c1": "<a href='https://www.roamtips.com/' target='_blank'>RoamTips.com</a> Useful tips to help you master Roam" },
                 { "c1": "<a href='https://www.roamstack.com/' target='_blank'>RoamStack.com</a> Tools, techniques, and workflows to get the most out of Roam Research" },
                 { "c1": "<a href='https://www.roambrain.com/' target='_blank'>RoamBrain.com</a> An information hub for Roam Research" },
                 { "c1": "<a href='https://www.roamtips.com/' target='_blank'>RoamTips.com</a> Useful tips to help you master Roam" },
-                { "c1": "<a href='https://twitter.com/RoamFm' target='_blank'>RoamFM Podcast</a> Conversations with #roamcult"}
+                { "c1": "<a href='https://twitter.com/RoamFm' target='_blank'>RoamFM Podcast</a> Conversations with #roamcult"},
               ]
   },
 
