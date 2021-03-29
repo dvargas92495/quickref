@@ -205,7 +205,7 @@ const data = [
      "topic": "Sidebar",
     "header": {"c1": "Action", "c2": "Windows", "c3": "Mac" },
      "items": [
-                { "c1": "Toggle open/close right sidebar",                      "c2": "Ctrl+Shift+\\", "c3": "CMD+Shift+\\" },
+                { "c1": "Toggle open/close right sidebar",                      "c2": "Ctrl+/", "c3": "CMD+/" },
                 { "c1": "Toggle open/close left sidebar",                       "c2": "Ctrl+\\",       "c3": "CMD+\\" },
                 { "c1": "Open/create page in right Sidebar (from search)",       "c2": "Shift-Enter",  "c3": "Shift-Enter" },
                 { "c1": "Open Daily Notes in right Sidebar (from left Sidebar)", "c2": "Shift-Click",  "c3": "Shift-Click" },
